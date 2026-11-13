@@ -2,6 +2,9 @@
   <img src="assets/walkdroid/logo.png" width="176" alt="WalkDroid 标志">
   <h1>WalkDroid</h1>
   <p><strong>面向Sony Walkman ZX300A HIFI音乐播放器的实验性Android系统。</strong></p>
+  <p align="center">
+  <a href="https://ko-fi.com/J1F02AL174"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"></a>
+</p>
   <p>Android 9 · LineageOS 16 · NW-ZX300A</p>
   <p><strong>简体中文</strong> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.en.md">English</a> · <a href="README.ja.md">日本語</a></p>
   <p><a href="https://tgwgroup.ltd/2025/10/19/support-me/">💛 支持这个项目</a></p>
