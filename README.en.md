@@ -2,6 +2,9 @@
   <img src="assets/walkdroid/logo.png" width="176" alt="WalkDroid logo">
   <h1>WalkDroid</h1>
   <p><strong>An experimental Android system for the Sony Walkman ZX300A HiFi music player.</strong></p>
+  <p align="center">
+  <a href="https://ko-fi.com/J1F02AL174"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"></a>
+</p>
   <p>Android 9 · LineageOS 16 · NW-ZX300A</p>
   <p><a href="README.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <strong>English</strong> · <a href="README.ja.md">日本語</a></p>
   <p><a href="https://tgwgroup.ltd/2025/10/19/support-me/">💛 Support the project</a></p>
