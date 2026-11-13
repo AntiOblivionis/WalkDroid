@@ -1,0 +1,744 @@
+<resources>
+    <string-array name="walkdroid_message_source" translatable="false">
+        <item>"应用独占服务尚未就绪"</item>
+        <item>"应用独占服务未响应"</item>
+        <item>"应用列表"</item>
+        <item>"独占回读格式"</item>
+        <item>"当前设置不可更改"</item>
+        <item>"控制操作失败（"</item>
+        <item>"USB DAC 状态未确认，请重新打开此页读取。"</item>
+        <item>"蓝牙接收状态未确认，请重新打开此页读取。"</item>
+        <item>"蓝牙输出状态未确认，请重新打开此页读取。"</item>
+        <item>"声音设置仍在等待确认"</item>
+        <item>"Sony 声音"</item>
+        <item>"正在读取声音设置…"</item>
+        <item>"正在读取 USB DAC 状态…"</item>
+        <item>"蓝牙接收"</item>
+        <item>"正在读取蓝牙接收状态…"</item>
+        <item>"蓝牙输出设备"</item>
+        <item>"正在读取已配对设备…"</item>
+        <item>"蓝牙输出"</item>
+        <item>"正在读取蓝牙输出状态…"</item>
+        <item>"蓝牙设备音量"</item>
+        <item>"连接后可调整设备音量"</item>
+        <item>"蓝牙绝对音量"</item>
+        <item>"独占应用"</item>
+        <item>"正在读取独占状态…"</item>
+        <item>"DSD 播放"</item>
+        <item>"选择 DSF 文件，通过 3.5 mm 输出 DSD 转 PCM。"</item>
+        <item>"直出"</item>
+        <item>"按原厂直出行为处理；关闭后使用下方音效。"</item>
+        <item>"保存的声音设置"</item>
+        <item>"保存当前声音设置"</item>
+        <item>"保存至三组设置之一，包含均衡器、音调、DSEE HX、DC 相位、黑胶和动态音量均衡。"</item>
+        <item>"载入声音设置"</item>
+        <item>"载入已保存的音效；保持当前音量、增益、直出、DSD 和 Walkman One 播放模式。"</item>
+        <item>"耳机输出"</item>
+        <item>"Walkman 音量"</item>
+        <item>"AVLS 音量限制"</item>
+        <item>"按原厂当前输出与增益限制音量；关闭时不会自动提高音量。"</item>
+        <item>"3.5 mm 高增益"</item>
+        <item>"切换时按原厂规则调整音量；低于目标初始音量时保持原值。"</item>
+        <item>"4.4 mm 高增益"</item>
+        <item>"4.4 mm 平衡输出尚未完成。"</item>
+        <item>"原生 DSD"</item>
+        <item>"尚未完成；目前可使用 3.5 mm 的 DSD 转 PCM。"</item>
+        <item>"左声道衰减"</item>
+        <item>"右声道衰减"</item>
+        <item>"播放模式"</item>
+        <item>"CFW 调音取向"</item>
+        <item>"未指定（保持当前链路）"</item>
+        <item>"实验性选项：完整调音效果仍在验证。停止播放后可切换。"</item>
+        <item>"CFW 音量模式（GMD）"</item>
+        <item>"Normal（标准）"</item>
+        <item>"Higher（较高）"</item>
+        <item>"Lower（较低）"</item>
+        <item>"DSD 播放设置"</item>
+        <item>"当前 DSD 处理"</item>
+        <item>"DSD 滤波器"</item>
+        <item>"缓降（Slow Roll-Off）"</item>
+        <item>"陡降（Sharp Roll-Off）"</item>
+        <item>"DSD 增益"</item>
+        <item>"均衡器与音调"</item>
+        <item>"调整方式"</item>
+        <item>"十段均衡器"</item>
+        <item>"三段音调"</item>
+        <item>"选择十段均衡器并关闭直出后生效。"</item>
+        <item>"频段 "</item>
+        <item>"音调控制"</item>
+        <item>"选择三段音调并关闭直出后生效。"</item>
+        <item>"低音"</item>
+        <item>"中音"</item>
+        <item>"高音"</item>
+        <item>"使用 Sony 原厂升频处理，直出开启时不适用。"</item>
+        <item>"DSEE 模式"</item>
+        <item>"标准"</item>
+        <item>"女声"</item>
+        <item>"男声"</item>
+        <item>"打击乐"</item>
+        <item>"弦乐"</item>
+        <item>"当前处理"</item>
+        <item>"DC 相位线性器"</item>
+        <item>"使用原厂相位处理。"</item>
+        <item>"相位模式"</item>
+        <item>"类型 A LOW"</item>
+        <item>"类型 A STANDARD"</item>
+        <item>"类型 A HIGH"</item>
+        <item>"类型 B LOW"</item>
+        <item>"类型 B STANDARD"</item>
+        <item>"类型 B HIGH"</item>
+        <item>"黑胶处理"</item>
+        <item>"使用原厂黑胶处理效果。"</item>
+        <item>"黑胶模式"</item>
+        <item>"音臂共振"</item>
+        <item>"转盘共振"</item>
+        <item>"音纹杂音"</item>
+        <item>"动态音量均衡"</item>
+        <item>"使用 Sony 原厂处理，减小曲目间的音量差异；直出开启时不生效。"</item>
+        <item>"当前支持范围"</item>
+        <item>"USB DAC 和蓝牙接收独占声音输出，开启前请连接耳机并调整音量。DSEE AI 适用于 44.1 / 48 kHz 立体声 PCM；其他格式遵循原厂处理规则。4.4 mm 与原生 DSD 尚未完成，更多 CFW 调音取向仍在适配。"</item>
+        <item>"蓝牙输出 · "</item>
+        <item>"请选择模式"</item>
+        <item>"原生 DSD · 4.4 mm"</item>
+        <item>"Sony 原厂 DSD 转 PCM"</item>
+        <item>"未读取模式"</item>
+        <item>" · 停止播放后可切换"</item>
+        <item>"未确认"</item>
+        <item>"当前生效："</item>
+        <item>"已保存："</item>
+        <item>"；当前生效："</item>
+        <item>"。更改后需重新启动，与耳机高增益开关分别设置。"</item>
+        <item>"当前输出："</item>
+        <item>"上次播放输出："</item>
+        <item>"高增益"</item>
+        <item>"普通增益"</item>
+        <item>"。可调整原厂音量；其他声音设置请先关闭接收。"</item>
+        <item>"。声音设置请在关闭接收后修改。"</item>
+        <item>"。DSF 使用原厂音量；未经过 Android 媒体混音与软件音量。"</item>
+        <item>"。播放器音量和 Android 媒体音量共同决定响度。"</item>
+        <item>"已开启 · 当前上限 "</item>
+        <item>"USB DAC（状态待确认）"</item>
+        <item>"蓝牙接收（状态待确认）"</item>
+        <item>" 声音设置请在关闭接收后修改。"</item>
+        <item>"连接后读取设备状态"</item>
+        <item>"按原厂方式发送相对音量指令"</item>
+        <item>"按设备回报音量调节，等待设备确认"</item>
+        <item>"已开启；当前连接按原厂相对音量方式调节"</item>
+        <item>"降低"</item>
+        <item>"提高"</item>
+        <item>"取消"</item>
+        <item>"设备状态未确认，点按重新读取"</item>
+        <item>"未选择 · 已配对设备 "</item>
+        <item>" 台"</item>
+        <item>" · 已选择"</item>
+        <item>"不指定设备"</item>
+        <item>"蓝牙设备"</item>
+        <item>"正在保存设备选择…"</item>
+        <item>"独占状态未确认，点按重新读取"</item>
+        <item>"未指定 · 普通播放"</item>
+        <item>" · 已独占"</item>
+        <item>"正在读取应用…"</item>
+        <item>"不指定（普通播放）"</item>
+        <item>"正在切换独占应用…"</item>
+        <item>"声音设置 1"</item>
+        <item>"声音设置 2"</item>
+        <item>"声音设置 3"</item>
+        <item>"正在保存声音设置…"</item>
+        <item>"正在载入声音设置…"</item>
+        <item>"预设请求失败（"</item>
+        <item>"保存请求已发送：声音设置 "</item>
+        <item>"载入请求已发送：声音设置 "</item>
+        <item>"预设操作未获确认"</item>
+        <item>"将重新读取播放器状态；尚未初始化的预设需要先保存。"</item>
+        <item>"确定"</item>
+        <item>"正在应用并保存…"</item>
+        <item>"设置请求失败（"</item>
+        <item>"设置请求已发送"</item>
+        <item>"已发送 AVLS 限制后的音量请求"</item>
+        <item>"未能应用设置"</item>
+        <item>"本次设置未获确认，将重新读取播放器状态。"</item>
+        <item>"未接受设置请求"</item>
+        <item>"设置请求已发送；当前输出状态可重新读取"</item>
+        <item>"设置未获确认"</item>
+        <item>"将重新读取播放器状态。本次请求不会自动重发。"</item>
+        <item>"蓝牙接收独占"</item>
+        <item>"输出已开启 · "</item>
+        <item>" · 输出静音"</item>
+        <item>"已就绪 · 等待手机音频"</item>
+        <item>" · 原厂音量可调整 · 音效只读"</item>
+        <item>" · 当前声音设置只读"</item>
+        <item>"USB DAC 独占"</item>
+        <item>"输出 · "</item>
+        <item>"输出静音"</item>
+        <item>"正在播放"</item>
+        <item>"已就绪 · 等待音频"</item>
+        <item>"原生 DSD 独占输出已就绪 · "</item>
+        <item>"原厂音量可调整"</item>
+        <item>"当前设置只读"</item>
+        <item>"DSF 独占输出已就绪 · "</item>
+        <item>"音效可调整 · 原厂音量可调整"</item>
+        <item>"已读取原厂声音设置 · "</item>
+        <item>"待机"</item>
+        <item>"声音设置正忙，稍后自动刷新。"</item>
+        <item>"尚未确认当前声音状态，正在重新读取。"</item>
+        <item>"蓝牙设备服务尚未就绪"</item>
+        <item>"设备列表未确认"</item>
+        <item>"蓝牙设备服务未响应"</item>
+        <item>"蓝牙设备回读格式"</item>
+        <item>"蓝牙输出服务尚未就绪"</item>
+        <item>"蓝牙输出服务未响应"</item>
+        <item>"蓝牙输出响应格式"</item>
+        <item>"Sony 蓝牙输出"</item>
+        <item>"关闭"</item>
+        <item>"蓝牙输出状态未确认，请重新读取"</item>
+        <item>"正在连接…"</item>
+        <item>"正在关闭…"</item>
+        <item>"手机"</item>
+        <item>"已开启，请从已配对手机连接并播放。"</item>
+        <item>"蓝牙音频链路已开启 · "</item>
+        <item>"DSEE 处理状态不完整"</item>
+        <item>"DSEE 状态标记无效"</item>
+        <item>"DSEE 采样率无效"</item>
+        <item>"DSEE AI 实际处理状态不一致"</item>
+        <item>"已关闭"</item>
+        <item>"DSEE AI 正在处理 · 输入 "</item>
+        <item>" · 等待输出"</item>
+        <item>" · 输出 "</item>
+        <item>"当前格式按 Sony 原厂 DSEE HX 规则处理"</item>
+        <item>"已选择 DSEE AI · 适用于 44.1 / 48 kHz 立体声 PCM"</item>
+        <item>"DSEE HX · 按 Sony 原厂适用条件处理"</item>
+        <item>"已选择 DSEE HX · 播放时按原厂适用条件处理"</item>
+        <item>" · 输入 "</item>
+        <item>"Sony DSD 播放"</item>
+        <item>"选择 DSF 文件"</item>
+        <item>"播放"</item>
+        <item>"停止"</item>
+        <item>"声音设置"</item>
+        <item>"刷新播放状态"</item>
+        <item>"3.5 mm 使用 DSD 转 PCM，滤波器和 DSD 增益可在声音设置中调整。4.4 mm 与原生 DSD 尚未完成。"</item>
+        <item>"正在读取播放状态…"</item>
+        <item>"原生 DSD · DSD"</item>
+        <item>"原厂 DSD 转 PCM · "</item>
+        <item>"尚未选择 DSF 文件"</item>
+        <item>"原厂音量 "</item>
+        <item>"原厂音量待确认"</item>
+        <item>"正在准备文件…"</item>
+        <item>"正在启动…"</item>
+        <item>"播放服务已退出"</item>
+        <item>"播放后端返回错误 "</item>
+        <item>"正在播放 · "</item>
+        <item>"正在停止…"</item>
+        <item>"正在启动原厂播放链…"</item>
+        <item>"未能播放（错误 "</item>
+        <item>"播放结束"</item>
+        <item>"已停止"</item>
+        <item>"文件已准备好"</item>
+        <item>"请选择 DSF 文件"</item>
+        <item>"播放状态未确认，请刷新状态后再试"</item>
+        <item>"播放链尚未释放"</item>
+        <item>"无法取得播放焦点"</item>
+        <item>"请先停止播放并确认状态"</item>
+        <item>"请选择可读取的 DSF 文件"</item>
+        <item>"正在准备 DSF 文件…"</item>
+        <item>"DSF 文件"</item>
+        <item>"请选择 .dsf 文件"</item>
+        <item>"无法清理未完成文件"</item>
+        <item>"存储空间不足"</item>
+        <item>"无法读取文件"</item>
+        <item>"已取消准备"</item>
+        <item>"文件超过可用空间"</item>
+        <item>"DSF 文件不完整"</item>
+        <item>"无法保存已准备文件"</item>
+        <item>"无法准备文件："</item>
+        <item>"未接受原厂音量请求"</item>
+        <item>"音量结果未确认；不会自动重发"</item>
+        <item>"接收独占服务尚未就绪"</item>
+        <item>"接收独占服务未响应"</item>
+        <item>"接收独占响应格式"</item>
+        <item>"蓝牙输出关闭仍未确认"</item>
+        <item>"接收独占保护尚未确认"</item>
+        <item>"接收尚未关闭"</item>
+        <item>"另一接收实例仍在占用"</item>
+        <item>"系统声音恢复尚未确认"</item>
+        <item>"接收状态响应不完整"</item>
+        <item>"接收状态响应不匹配"</item>
+        <item>"接收状态响应无效"</item>
+        <item>"关闭状态尚未确认"</item>
+        <item>"接收会话身份缺失"</item>
+        <item>"独占状态尚未确认"</item>
+        <item>"输入故障状态不完整"</item>
+        <item>"资源保留状态不完整"</item>
+        <item>"退出过程尚未完成"</item>
+        <item>"正在开启 USB DAC…"</item>
+        <item>"已开启，等待电脑播放。"</item>
+        <item>"已开启，正在接收音频…"</item>
+        <item>"电脑输入格式暂不支持；独占仍保留，请关闭后重新开启。"</item>
+        <item>"音频输入中断；独占仍保留，请关闭后重新开启。"</item>
+        <item>"正在关闭并恢复系统声音…"</item>
+        <item>"退出状态未确认，请重启播放器。"</item>
+        <item>"未开启，请先连接一副耳机。"</item>
+        <item>"未开启，请先停止其他播放。"</item>
+        <item>"未能开启，请检查耳机和电脑连接。"</item>
+        <item>"已关闭；开启前请连接一副耳机并调整音量。"</item>
+        <item>"电脑"</item>
+        <item>"正在关闭 USB DAC…"</item>
+        <item>"接收服务已退出"</item>
+        <item>"接收请求编号已用尽"</item>
+        <item>"接收状态含有不支持的描述符"</item>
+        <item>"接收独占保护缺失，关闭结果尚未确认"</item>
+        <item>"接收独占保护缺失，正在确认关闭"</item>
+        <item>"接收保护已重置，本次接收已关闭；请重新开启。"</item>
+        <item>"USB DAC 状态未确认，正在重新读取…"</item>
+        <item>"无法确认 USB DAC 状态，请重新打开此页读取。"</item>
+        <item>"状态尚未读取"</item>
+        <item>"正在读取独占状态"</item>
+        <item>"用户已切换，独占选择已清空"</item>
+        <item>"独占切换尚未确认"</item>
+        <item>"独占切换失败（"</item>
+        <item>"普通播放，未指定独占应用"</item>
+        <item>"独占已生效："</item>
+        <item>"选择已生效，但保存失败"</item>
+        <item>"应用安装身份已变，独占选择已清空"</item>
+        <item>" 独占保护中；"</item>
+        <item>"退出后恢复普通播放"</item>
+        <item>"保留应用选择："</item>
+        <item>"独占状态未确认（"</item>
+        <item>"），请重新读取"</item>
+        <item>"正在保留接收保护，请打开对应接收模式确认状态"</item>
+        <item>"独占已恢复："</item>
+        <item>"接收界面已退出，独占保护保留；请重新打开确认关闭"</item>
+        <item>"正在关闭蓝牙输出，等待接收独占"</item>
+        <item>"另一接收实例正在交接"</item>
+        <item>"蓝牙设备状态尚未读取"</item>
+        <item>"未选择蓝牙输出设备"</item>
+        <item>"蓝牙输出设备已选择"</item>
+        <item>"设备列表已变化，请重新打开列表"</item>
+        <item>"保存结果尚未确认，请重新读取"</item>
+        <item>"蓝牙设备状态未确认，请重新读取"</item>
+        <item>"正在读取蓝牙输出状态"</item>
+        <item>"蓝牙操作未获确认（"</item>
+        <item>"蓝牙回执未确认，正在关闭本次连接"</item>
+        <item>"请先选择蓝牙输出设备"</item>
+        <item>"未连接"</item>
+        <item>"已连接"</item>
+        <item>"蓝牙连接失败（"</item>
+        <item>"蓝牙连接未获确认，正在关闭"</item>
+        <item>"接收模式独占中，蓝牙输出已关闭"</item>
+        <item>"先选择蓝牙输出设备"</item>
+        <item>"正在连接 "</item>
+        <item>"Android 蓝牙尚未关闭"</item>
+        <item>"Android 蓝牙关闭未获确认"</item>
+        <item>"蓝牙连接超时，正在关闭"</item>
+        <item>"正在关闭蓝牙输出"</item>
+        <item>"Android 路由属于其他连接"</item>
+        <item>"Android 路由关闭尚未确认"</item>
+        <item>"蓝牙输出已关闭，可以进入接收模式"</item>
+        <item>"接收独占尚未释放"</item>
+        <item>"Android 蓝牙恢复未获接受"</item>
+        <item>"蓝牙输出已关闭，正在恢复 Android 蓝牙"</item>
+        <item>"正在恢复 Android 蓝牙"</item>
+        <item>"Android 蓝牙状态已变化"</item>
+        <item>"未连接（上次操作未获确认）"</item>
+        <item>"蓝牙输出状态未确认（"</item>
+        <item>"蓝牙音量暂不可调整"</item>
+        <item>"已发送蓝牙设备音量指令；实际音量以设备回报为准"</item>
+        <item>"蓝牙设备音量未获确认；本次不会重发"</item>
+        <item>"设备音量 "</item>
+        <item>"设备未回报当前音量"</item>
+        <item>"正在调整设备音量…"</item>
+        <item>"已发送，等待设备确认"</item>
+        <item>"调节未获确认（"</item>
+        <item>"正在传输音频"</item>
+        <item>"已连接，等待播放"</item>
+        <item>"已就绪；等待音量操作"</item>
+        <item>"音量操作过密；本次未发送"</item>
+        <item>"音量操作已过期；本次未发送"</item>
+        <item>"原厂音量暂不可调整"</item>
+        <item>"音量请求已发送："</item>
+        <item>"索尼音量未确认；本次不会重发"</item>
+        <item>"原厂控制未接受"</item>
+        <item>"原厂控制等待超时"</item>
+        <item>"蓝牙接收 状态未确认，请重新打开此页读取。"</item>
+        <item>"正在读取 蓝牙接收 状态…"</item>
+        <item>"蓝牙接收 和蓝牙接收独占声音输出，开启前请连接耳机并调整音量。DSEE AI 适用于 44.1 / 48 kHz 立体声 PCM；其他格式遵循原厂处理规则。4.4 mm 与原生 DSD 尚未完成，更多 CFW 调音取向仍在适配。"</item>
+        <item>"蓝牙接收 独占"</item>
+        <item>"正在开启 蓝牙接收…"</item>
+        <item>"已开启，等待手机播放。"</item>
+        <item>"手机输入格式暂不支持；独占仍保留，请关闭后重新开启。"</item>
+        <item>"未能开启，请检查耳机和手机连接。"</item>
+        <item>"正在关闭 蓝牙接收…"</item>
+        <item>"蓝牙接收 状态未确认，正在重新读取…"</item>
+        <item>"无法确认 蓝牙接收 状态，请重新打开此页读取。"</item>
+    </string-array>
+    <string-array name="walkdroid_messages">
+        <item>"App-exclusive service is not ready yet"</item>
+        <item>"App exclusive service is not responding"</item>
+        <item>"Application list"</item>
+        <item>"Exclusive readback format"</item>
+        <item>"Current settings cannot be changed"</item>
+        <item>"Control operation failed ("</item>
+        <item>"USB DAC status is not confirmed, please reopen this page to read."</item>
+        <item>"The Bluetooth reception status is not confirmed, please reopen this page to read."</item>
+        <item>"The Bluetooth output status is not confirmed, please reopen this page to read."</item>
+        <item>"Sound settings still awaiting confirmation"</item>
+        <item>"Sony Sound"</item>
+        <item>"Reading sound settings..."</item>
+        <item>"Reading USB DAC status..."</item>
+        <item>"Bluetooth reception"</item>
+        <item>"Reading Bluetooth reception status..."</item>
+        <item>"Bluetooth output device"</item>
+        <item>"Reading paired devices..."</item>
+        <item>"Bluetooth output"</item>
+        <item>"Reading Bluetooth output status..."</item>
+        <item>"Bluetooth device volume"</item>
+        <item>"Device volume can be adjusted after connection"</item>
+        <item>"Bluetooth absolute volume"</item>
+        <item>"Exclusive application"</item>
+        <item>"Reading exclusive status..."</item>
+        <item>"DSD playback"</item>
+        <item>"Select a DSF file for DSD-to-PCM playback through the 3.5 mm output."</item>
+        <item>"Direct Source"</item>
+        <item>"Use the original Direct Source path; turn it off to use the sound effects below."</item>
+        <item>"Saved sound settings"</item>
+        <item>"Save current sound settings"</item>
+        <item>"Save to one of three sets of settings including EQ, Tone, DSEE HX, DC Phase, Vinyl and Dynamic Volume EQ."</item>
+        <item>"Load sound settings"</item>
+        <item>"Loads saved sound effects; maintains current volume, gain, direct, DSD and Walkman One playback modes."</item>
+        <item>"Headphone output"</item>
+        <item>"Walkman volume"</item>
+        <item>"AVLS volume limit"</item>
+        <item>"Limit the volume according to the original factory current output and gain; it will not automatically increase the volume when turned off."</item>
+        <item>"3.5 mm high gain"</item>
+        <item>"When switching, adjust the volume according to the original factory rules; when it is lower than the target initial volume, keep the original value."</item>
+        <item>"4.4 mm high gain"</item>
+        <item>"The 4.4 mm balanced output is not yet complete."</item>
+        <item>"Native DSD"</item>
+        <item>"Not yet complete; 3.5 mm DSD to PCM is currently available."</item>
+        <item>"Left channel attenuation"</item>
+        <item>"Right channel attenuation"</item>
+        <item>"Playback mode"</item>
+        <item>"CFW tuning orientation"</item>
+        <item>"Unspecified (keep current link)"</item>
+        <item>"Experimental option: The full tuning effect is still being verified. Can be switched after stopping playback."</item>
+        <item>"CFW volume mode (GMD)"</item>
+        <item>"Normal"</item>
+        <item>"Higher"</item>
+        <item>"Lower"</item>
+        <item>"DSD playback settings"</item>
+        <item>"Current DSD processing"</item>
+        <item>"DSD filter"</item>
+        <item>"Slow Roll-Off"</item>
+        <item>"Sharp Roll-Off"</item>
+        <item>"DSD gain"</item>
+        <item>"Equalizer and Tone"</item>
+        <item>"Adjustment method"</item>
+        <item>"Ten-band equalizer"</item>
+        <item>"Three-band tone control"</item>
+        <item>"It takes effect after selecting the ten-band equalizer and turning off the straight out."</item>
+        <item>"frequency band "</item>
+        <item>"tone control"</item>
+        <item>"It takes effect after selecting a three-band tone and turning off the direct output."</item>
+        <item>"Bass"</item>
+        <item>"Midrange"</item>
+        <item>"Treble"</item>
+        <item>"Using Sony's original upscaling process, it is not applicable when direct output is turned on."</item>
+        <item>"DSEE mode"</item>
+        <item>"Standard"</item>
+        <item>"Female vocal"</item>
+        <item>"Male vocal"</item>
+        <item>"percussion"</item>
+        <item>"Strings"</item>
+        <item>"Current processing"</item>
+        <item>"DC phase linearizer"</item>
+        <item>"Uses original phase processing."</item>
+        <item>"Phase mode"</item>
+        <item>"Type A LOW"</item>
+        <item>"Type A STANDARD"</item>
+        <item>"Type A HIGH"</item>
+        <item>"Type B LOW"</item>
+        <item>"Type B STANDARD"</item>
+        <item>"Type B HIGH"</item>
+        <item>"Vinyl Processor"</item>
+        <item>"Use the original Vinyl Processor effect."</item>
+        <item>"Vinyl mode"</item>
+        <item>"tone arm resonance"</item>
+        <item>"turntable resonance"</item>
+        <item>"Surface noise"</item>
+        <item>"Dynamic Normalizer"</item>
+        <item>"Use Sony's original processing to reduce the volume difference between tracks; it does not take effect when direct out is turned on."</item>
+        <item>"Current support scope"</item>
+        <item>"USB DAC and Bluetooth reception use exclusive audio output. Connect headphones and adjust the volume before turning them on. DSEE AI supports 44.1 / 48 kHz stereo PCM; other formats follow Sony processing rules. The 4.4 mm output and native DSD are not yet complete; additional CFW sound signatures are still being adapted."</item>
+        <item>"Bluetooth output · "</item>
+        <item>"Please select mode"</item>
+        <item>"Native DSD · 4.4 mm"</item>
+        <item>"Sony original DSD to PCM"</item>
+        <item>"Mode not read"</item>
+        <item>" · Can be switched after stopping playback"</item>
+        <item>"Not confirmed"</item>
+        <item>"Currently in effect:"</item>
+        <item>"Saved:"</item>
+        <item>";Currently effective:"</item>
+        <item>". After changing, you need to restart and set it separately with the headphone high gain switch."</item>
+        <item>"Current output: "</item>
+        <item>"Last played output:"</item>
+        <item>"high gain"</item>
+        <item>"normal gain"</item>
+        <item>". The original volume can be adjusted; for other sound settings, please turn off reception first."</item>
+        <item>". Please modify the sound settings after turning off reception."</item>
+        <item>". DSF uses factory volumes; not Android media mix and software volumes."</item>
+        <item>". Player volume and Android media volume work together to determine loudness."</item>
+        <item>"Enabled · Current upper limit "</item>
+        <item>"USB DAC (status to be confirmed)"</item>
+        <item>"Bluetooth reception (status to be confirmed)"</item>
+        <item>" Please modify the sound settings after turning off reception."</item>
+        <item>"Read device status after connection"</item>
+        <item>"Send relative volume instructions according to the original method"</item>
+        <item>"Adjust using the volume reported by the device; wait for confirmation."</item>
+        <item>"Enabled; the current connection is adjusted according to the original factory relative volume method"</item>
+        <item>"Decrease"</item>
+        <item>"Increase"</item>
+        <item>"Cancel"</item>
+        <item>"The device status is not confirmed. Click to read again."</item>
+        <item>"Not selected · Paired device "</item>
+        <item>""</item>
+        <item>" · Selected"</item>
+        <item>"No device specified"</item>
+        <item>"bluetooth device"</item>
+        <item>"Saving device selection…"</item>
+        <item>"Exclusive status is not confirmed, click to re-read"</item>
+        <item>"Unspecified · Normal playback"</item>
+        <item>" · Exclusive"</item>
+        <item>"Reading application..."</item>
+        <item>"Not specified (normal playback)"</item>
+        <item>"Switching exclusive apps…"</item>
+        <item>"Sound settings 1"</item>
+        <item>"Sound settings 2"</item>
+        <item>"Sound settings 3"</item>
+        <item>"Saving sound settings..."</item>
+        <item>"Loading sound settings..."</item>
+        <item>"Preset request failed ("</item>
+        <item>"Save request sent: sound settings "</item>
+        <item>"Load request sent: sound settings "</item>
+        <item>"Preset operation not confirmed"</item>
+        <item>"Player state will be re-read; presets that have not yet been initialized need to be saved first."</item>
+        <item>"OK"</item>
+        <item>"Applying and saving..."</item>
+        <item>"Setup request failed ("</item>
+        <item>"Setup request sent"</item>
+        <item>"Volume request after AVLS limit sent"</item>
+        <item>"Failed to apply settings"</item>
+        <item>"This setting has not been confirmed and the player status will be re-read."</item>
+        <item>"Setup request not accepted"</item>
+        <item>"Setup request sent; current output status can be reread"</item>
+        <item>"Setting not confirmed"</item>
+        <item>"Player status will be reread. This request will not be automatically resent."</item>
+        <item>"Bluetooth receiver exclusive · "</item>
+        <item>"Output is on · "</item>
+        <item>" · Output mute"</item>
+        <item>"Ready · Waiting for mobile audio"</item>
+        <item>" · Original volume can be adjusted · Sound effects are read-only"</item>
+        <item>" · Current sound settings are read-only"</item>
+        <item>"USB DAC exclusive · "</item>
+        <item>"Output · "</item>
+        <item>"Output mute"</item>
+        <item>"Playing"</item>
+        <item>"Ready · Waiting for audio"</item>
+        <item>"Native DSD exclusive output ready · "</item>
+        <item>"Original volume can be adjusted"</item>
+        <item>"Current setting is read only"</item>
+        <item>"DSF exclusive output ready · "</item>
+        <item>"Adjustable sound effects · Adjustable original volume"</item>
+        <item>"Original sound settings have been read · "</item>
+        <item>"standby"</item>
+        <item>"Sound settings are busy and will be refreshed automatically later."</item>
+        <item>"The current sound status has not been confirmed and is being reread."</item>
+        <item>"Bluetooth device service is not ready yet"</item>
+        <item>"Device list not confirmed"</item>
+        <item>"Bluetooth device service not responding"</item>
+        <item>"Bluetooth device readback format"</item>
+        <item>"Bluetooth output service is not ready yet"</item>
+        <item>"Bluetooth output service not responding"</item>
+        <item>"Bluetooth output response format"</item>
+        <item>"Sony bluetooth output"</item>
+        <item>"Turn off"</item>
+        <item>"Bluetooth output status is not confirmed, please read again"</item>
+        <item>"Connecting…"</item>
+        <item>"Turning off…"</item>
+        <item>"mobile phone"</item>
+        <item>"On. Connect and play audio from a paired phone."</item>
+        <item>"Bluetooth audio link is on · "</item>
+        <item>"DSEE processing status is incomplete"</item>
+        <item>"DSEE status tag is invalid"</item>
+        <item>"DSEE sampling rate is invalid"</item>
+        <item>"The actual processing status of DSEE AI is inconsistent"</item>
+        <item>"Off"</item>
+        <item>"DSEE AI is processing · input "</item>
+        <item>" · Waiting for output"</item>
+        <item>" · Output "</item>
+        <item>"The current format is processed according to Sony's original DSEE HX rules"</item>
+        <item>"DSEE AI selected · For 44.1 / 48 kHz stereo PCM"</item>
+        <item>"DSEE HX · Treated according to Sony original factory applicable conditions"</item>
+        <item>"DSEE HX has been selected · Playback will be handled according to the original factory applicable conditions"</item>
+        <item>" · Input "</item>
+        <item>"Sony DSD playback"</item>
+        <item>"Select DSF file"</item>
+        <item>"Play"</item>
+        <item>"stop"</item>
+        <item>"sound settings"</item>
+        <item>"Refresh playback status"</item>
+        <item>"The 3.5 mm output converts DSD to PCM. Adjust the filter and DSD gain in Sound settings. The 4.4 mm output and native DSD are not yet complete."</item>
+        <item>"Reading playback status..."</item>
+        <item>"Native DSD · DSD"</item>
+        <item>"Sony DSD-to-PCM · "</item>
+        <item>"No DSF file selected yet"</item>
+        <item>"Walkman volume "</item>
+        <item>"Walkman volume unconfirmed"</item>
+        <item>"Preparing files…"</item>
+        <item>"Starting..."</item>
+        <item>"Play service has exited"</item>
+        <item>"Play backend returns error "</item>
+        <item>"Playing · "</item>
+        <item>"Stopping…"</item>
+        <item>"Starting the original playback chain..."</item>
+        <item>"Failed to play (error "</item>
+        <item>"Playback finished"</item>
+        <item>"Stopped"</item>
+        <item>"File is ready"</item>
+        <item>"Please select a DSF file"</item>
+        <item>"The playback status is not confirmed, please refresh the status and try again"</item>
+        <item>"The play chain has not been released yet"</item>
+        <item>"Unable to obtain playback focus"</item>
+        <item>"Please stop playing and confirm the status first"</item>
+        <item>"Please select a readable DSF file"</item>
+        <item>"Preparing DSF file..."</item>
+        <item>"DSF file"</item>
+        <item>"Please select a .dsf file"</item>
+        <item>"Unable to clean up unfinished files"</item>
+        <item>"Not enough storage space"</item>
+        <item>"Unable to read file"</item>
+        <item>"Preparation canceled"</item>
+        <item>"File exceeds available space"</item>
+        <item>"DSF file is incomplete"</item>
+        <item>"Unable to save prepared file"</item>
+        <item>"Unable to prepare file:"</item>
+        <item>"Factory volume request not accepted"</item>
+        <item>"Volume result not confirmed; will not automatically resend"</item>
+        <item>"Receive exclusive service not yet ready"</item>
+        <item>"Receive exclusive service not responding"</item>
+        <item>"Receive exclusive response format"</item>
+        <item>"Bluetooth output shutdown still unconfirmed"</item>
+        <item>"Receiving exclusive protection has not yet been confirmed"</item>
+        <item>"Reception has not been closed"</item>
+        <item>"Another receiving instance is still occupied"</item>
+        <item>"System sound restoration has not yet been confirmed"</item>
+        <item>"Receive status response is incomplete"</item>
+        <item>"Receive status response mismatch"</item>
+        <item>"Invalid receive status response"</item>
+        <item>"Closed status not yet confirmed"</item>
+        <item>"Receive session identity missing"</item>
+        <item>"Exclusive status not yet confirmed"</item>
+        <item>"Incomplete fault status input"</item>
+        <item>"Resource reservation status is incomplete"</item>
+        <item>"The exit process is not complete yet"</item>
+        <item>"Turning on USB DAC…"</item>
+        <item>"On, waiting for audio from the computer."</item>
+        <item>"Enabled, receiving audio..."</item>
+        <item>"The computer input format is not supported yet; the exclusive is still reserved, please close and reopen it."</item>
+        <item>"Audio input is interrupted; exclusivity remains, please turn it off and on again."</item>
+        <item>"Turning off and restoring system audio…"</item>
+        <item>"The exit status is not confirmed, please restart the player."</item>
+        <item>"Not turned on, please connect a pair of headphones first."</item>
+        <item>"Not enabled, please stop other playback first."</item>
+        <item>"Failed to turn on, please check the connection between the headset and computer."</item>
+        <item>"Off; please connect a pair of headphones and adjust the volume before turning it on."</item>
+        <item>"computer"</item>
+        <item>"Shutting down USB DAC…"</item>
+        <item>"Receiving service has exited"</item>
+        <item>"Receive request number exhausted"</item>
+        <item>"Receive status contains unsupported descriptor"</item>
+        <item>"Receive exclusive protection is missing and the shutdown result has not yet been confirmed"</item>
+        <item>"Receive exclusive protection missing, confirming shutdown"</item>
+        <item>"Reception protection has been reset and this reception has been turned off; please turn it on again."</item>
+        <item>"USB DAC status not confirmed, re-reading..."</item>
+        <item>"Unable to confirm USB DAC status, please reopen this page to read."</item>
+        <item>"Status has not been read yet"</item>
+        <item>"Reading exclusive status"</item>
+        <item>"The user has been switched and the exclusive selection has been cleared"</item>
+        <item>"Exclusive switch not yet confirmed"</item>
+        <item>"Exclusive switch failed ("</item>
+        <item>"Normal playback, no exclusive application specified"</item>
+        <item>"Exclusivity is in effect:"</item>
+        <item>"The selection took effect but failed to save"</item>
+        <item>"The application installation identity has been changed and the exclusive selection has been cleared."</item>
+        <item>" Under exclusive protection;"</item>
+        <item>"Resume normal playback after exiting"</item>
+        <item>"Keep application selection:"</item>
+        <item>"Exclusive status is not confirmed ("</item>
+        <item>"), please read again"</item>
+        <item>"Receiving protection is being retained. Please turn on the corresponding receiving mode to confirm the status."</item>
+        <item>"Exclusivity has been restored:"</item>
+        <item>"The receiving interface has been exited and the exclusive protection is retained; please reopen it and confirm the closure."</item>
+        <item>"Turning off Bluetooth output, waiting to receive exclusive"</item>
+        <item>"Another receiving instance is handing over"</item>
+        <item>"Bluetooth device status has not been read yet"</item>
+        <item>"No Bluetooth output device selected"</item>
+        <item>"Bluetooth output device selected"</item>
+        <item>"The device list has changed, please reopen the list"</item>
+        <item>"The saving result has not been confirmed, please read again"</item>
+        <item>"Bluetooth device status is not confirmed, please read again"</item>
+        <item>"Reading Bluetooth output status"</item>
+        <item>"Bluetooth operation not confirmed ("</item>
+        <item>"The Bluetooth receipt is not confirmed and the connection is being closed."</item>
+        <item>"Please select the Bluetooth output device first"</item>
+        <item>"Not connected"</item>
+        <item>"Connected"</item>
+        <item>"Bluetooth connection failed ("</item>
+        <item>"Bluetooth connection not confirmed, closing"</item>
+        <item>"The receiving mode is exclusive and the Bluetooth output is turned off."</item>
+        <item>"Select the Bluetooth output device first"</item>
+        <item>"Connecting to "</item>
+        <item>"Android Bluetooth is not turned off yet"</item>
+        <item>"Android Bluetooth shutdown not confirmed"</item>
+        <item>"Bluetooth connection timed out and is closing"</item>
+        <item>"Turning off Bluetooth output"</item>
+        <item>"Android routing belongs to other connections"</item>
+        <item>"Android routing shutdown not yet confirmed"</item>
+        <item>"Bluetooth output is turned off and can enter receiving mode"</item>
+        <item>"Receiver exclusive access has not been released"</item>
+        <item>"Android Bluetooth recovery not accepted"</item>
+        <item>"Bluetooth output is off, restoring Android Bluetooth"</item>
+        <item>"Restoring Android Bluetooth"</item>
+        <item>"Android Bluetooth status has changed"</item>
+        <item>"Not connected (last operation not confirmed)"</item>
+        <item>"Bluetooth output status is not confirmed ("</item>
+        <item>"Bluetooth volume cannot be adjusted at the moment"</item>
+        <item>"Volume command sent; the actual volume is reported by the device."</item>
+        <item>"Bluetooth device volume not confirmed; will not be resent this time"</item>
+        <item>"Device volume "</item>
+        <item>"Device does not report current volume"</item>
+        <item>"Adjusting device volume..."</item>
+        <item>"Sent, waiting for device confirmation"</item>
+        <item>"Adjustment not confirmed ("</item>
+        <item>"Streaming audio"</item>
+        <item>"Connected, waiting for playback"</item>
+        <item>"Ready; waiting for volume action"</item>
+        <item>"Volume operation is too dense; not sent this time"</item>
+        <item>"Volume operation has expired; not sent this time"</item>
+        <item>"The original volume cannot be adjusted at the moment."</item>
+        <item>"Volume request sent:"</item>
+        <item>"Sony volume has not been confirmed; it will not be reissued this time"</item>
+        <item>"Original factory control not accepted"</item>
+        <item>"Original factory control wait timeout"</item>
+        <item>"Bluetooth reception status is not confirmed, please reopen this page to read."</item>
+        <item>"Reading Bluetooth receiving status..."</item>
+        <item>"Bluetooth reception and Bluetooth reception have exclusive sound output. Please connect headphones and adjust the volume before turning on. DSEE AI is suitable for 44.1/48 kHz stereo PCM; other formats follow original factory processing rules. 4.4 mm and native DSD are not yet complete, and more CFW tuning orientations are still being adapted."</item>
+        <item>"Bluetooth reception exclusive"</item>
+        <item>"Turning on Bluetooth reception..."</item>
+        <item>"On, waiting for audio from the phone."</item>
+        <item>"Mobile phone input formats are not supported yet; exclusivity is still reserved, please close and reopen it."</item>
+        <item>"Failed to turn on, please check the connection between the headset and mobile phone."</item>
+        <item>"Turning off Bluetooth reception..."</item>
+        <item>"Bluetooth reception status not confirmed, re-reading..."</item>
+        <item>"Unable to confirm Bluetooth reception status, please reopen this page to read."</item>
+    </string-array>
+</resources>

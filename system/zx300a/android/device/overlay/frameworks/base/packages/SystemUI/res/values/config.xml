@@ -1,0 +1,5 @@
+<resources>
+    <string name="quick_settings_tiles_default" translatable="false">bt,dnd,rotation,battery</string>
+    <string name="quick_settings_tiles_stock" translatable="false">battery,dnd,rotation,bt,location,inversion,saver,work,night,ambient_display,caffeine,heads_up,livedisplay,reading_mode,sync,volume_panel,profiles</string>
+    <string name="quick_settings_tiles_retail_mode" translatable="false">battery,dnd,rotation</string>
+</resources>

@@ -1,0 +1,59 @@
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
+ro.crypto.state=unencrypted
+service.adb.root=1
+
+
+
+ro.product.model=NW-ZX300A
+ro.product.brand=Sony
+ro.product.manufacturer=Sony
+ro.product.name=zx300a
+ro.product.device=zx300a
+ro.build.product=zx300a
+ro.product.locale=zh-CN
+ro.product.system.manufacturer=Sony
+ro.product.vendor.manufacturer=Sony
+ro.product.odm.manufacturer=Sony
+ro.product.product.manufacturer=Sony
+ro.product.system.brand=Sony
+ro.product.vendor.brand=Sony
+ro.product.odm.brand=Sony
+ro.product.product.brand=Sony
+ro.product.system.model=NW-ZX300A
+ro.product.vendor.model=NW-ZX300A
+ro.product.odm.model=NW-ZX300A
+ro.product.product.model=NW-ZX300A
+ro.product.marketname=Sony Walkman ZX300A
+ro.product.system.marketname=Sony Walkman ZX300A
+ro.product.vendor.marketname=Sony Walkman ZX300A
+ro.product.odm.marketname=Sony Walkman ZX300A
+ro.product.product.marketname=Sony Walkman ZX300A
+ro.product.system.device=zx300a
+ro.product.vendor.device=zx300a
+ro.product.odm.device=zx300a
+ro.product.product.device=zx300a
+ro.product.system.name=zx300a
+ro.product.vendor.name=zx300a
+ro.product.odm.name=zx300a
+ro.product.product.name=zx300a
+
+ro.walkdroid.sony_jack=physical-v1
+
+# Disable unavailable media statistics service, before app startup.
+media.metrics.enabled=0
+
+ro.walkdroid.app_policy=framework-v1
+
+ro.walkdroid.app_policy_control=ticket-v2
+
+ro.walkdroid.app_selector=framework-v2
+
+ro.walkdroid.bt_catalog=metadata-v1
+
+ro.walkdroid.bt_output=framework-v1
+ro.walkdroid.sony_volume=local-keys-v1
+# 384-kHz stereo float ring: 524288 frames * 8 bytes + control block.
+# Keep low-RAM mode; only override AudioFlinger's per-client shared pool cap.
+ro.af.client_heap_size_kbyte=6144

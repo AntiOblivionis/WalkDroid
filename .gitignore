@@ -1,0 +1,15 @@
+/out/
+/build/
+/private/
+/release/
+__pycache__/
+*.pyc
+*.img
+*.apk
+*.o
+*.a
+*.so
+*.ko
+*.pk8
+*.pem
+*.jks

@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.walkdroid.systemui.overlay" android:versionCode="1" android:versionName="1">
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="28" />
+    <overlay android:targetPackage="com.android.systemui" android:priority="1" />
+    <application android:label="WalkDroid quick settings" android:hasCode="false" />
+</manifest>

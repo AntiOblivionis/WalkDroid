@@ -1,0 +1,50 @@
+#!/sony/busybox sh
+B=/sony/busybox
+$B mount -t tmpfs -o mode=755 tmpfs /dev
+$B mknod /dev/null c 1 3
+$B mknod /dev/kmsg c 1 11
+$B mknod /dev/random c 1 8
+$B mknod /dev/urandom c 1 9
+$B mount -t proc proc /proc
+$B mount -t sysfs sysfs /sys
+exec >/dev/kmsg 2>&1
+set -x
+fail() { echo "ZX9_BOOTSTRAP_FAILED $*" >/dev/kmsg; $B sync; $B sleep 20; $B reboot -f; exit 1; }
+$B mkdir -p /dev/block
+V=$($B cat /sys/class/block/mmcblk0p29/dev) || fail contents_node
+$B mknod /dev/block/mmcblk0p29 b ${V%:*} ${V#*:}
+$B mknod /dev/device-mapper c 10 236 || fail dm_control
+/sony/internal-ext4-dm-static || fail ext4_block_ranges
+echo ZX9_BOOTSTRAP_ENTRY >/dev/kmsg
+# Entire Android system/data reside on the internal contents volume.
+# Card detection does not depend on any particular card identity.
+$B insmod /sony/icx_carddet.ko
+$B insmod /sony/wm_key.ko eint_num_key_wake=6
+$B mkdir -p /data /system /dev/pts
+for N in mmcblk0 mmcblk0p29; do
+ V=$($B cat /sys/class/block/$N/dev) || fail node_$N
+ [ -e /dev/block/$N ] || $B mknod /dev/block/$N b ${V%:*} ${V#*:} || fail node_$N
+done
+$B mknod /dev/fuse c 10 229
+$B mknod /dev/block/loop0 b 7 0
+$B mknod /dev/block/loop1 b 7 1
+$B mount -t ext4 -o ro,noload,noatime /dev/block/zx9-system-ext4 /system || fail system_mount
+$B sh /sony/lineage_early_properties.sh || fail lineage_early_properties
+$B sh /sony/radio/init.sh >/dev/zx9-radio-init.log 2>&1
+$B sh /sony/radio/system-apps.sh
+$B sh /sony/power-access.sh >/dev/zx9-power-access.log 2>&1 || fail power_access
+echo ZX9_SYSTEM_INTERNAL_DIRECT_EXT4
+$B mount -t ext4 -o rw,noatime /dev/block/zx9-data-ext4 /data || fail data_mount
+$B insmod /sony/zx9_hwbinder.ko || fail hidl_module
+$B insmod /sony/zx9_aslr.ko || fail aslr_module
+for N in 7 8 9 19 22 23 24 28; do
+ V=$($B cat /sys/class/block/mmcblk0p$N/dev) || fail protect_node
+ $B mknod /dev/block/mmcblk0p$N b ${V%:*} ${V#*:}
+ $B blockdev --setro /dev/block/mmcblk0p$N || fail protect_$N
+done
+$B sh /sony/setup_safe_zram.sh || fail safe_zram
+echo ZX9_BOOTSTRAP_MOUNTS_READY
+$B mv /init /sony/bootstrap-used.sh || fail replace_init
+$B cp /sony/init9 /init || fail copy_init
+$B chmod 0755 /init
+exec /init

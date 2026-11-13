@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.png -text
+*.ttf -text
+*.otf -text
+*.gz -text
+*.xz -text
+upstream/lineage16/*.part-* filter=lfs diff=lfs merge=lfs -text
+upstream/sony-open/*.part-* filter=lfs diff=lfs merge=lfs -text
+upstream/*.tar.zst filter=lfs diff=lfs merge=lfs -text
+upstream/ubuntu-glibc/*.tar.xz filter=lfs diff=lfs merge=lfs -text
+upstream/ubuntu-gcc/*.tar.gz filter=lfs diff=lfs merge=lfs -text
+upstream/ubuntu-gcc/*.tar.xz filter=lfs diff=lfs merge=lfs -text

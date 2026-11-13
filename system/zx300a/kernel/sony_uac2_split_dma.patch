@@ -1,0 +1,83 @@
+--- a/drivers/usb/gadget/f_uac2.c
++++ b/drivers/usb/gadget/f_uac2.c
+@@ -1,3 +1,4 @@
++#include <linux/vmalloc.h>
+ #include <linux/kref.h>
+ #include <linux/workqueue.h>
+ #include <linux/err.h>
+@@ -567,6 +568,8 @@
+ }
+ 
+ struct audio_dev {
++	/* Each USB request has its own contiguous DMA payload, never order-4. */
++	void *wd_capture_bufs[USB_XFERS];
+     struct wd_uac_source *wd_source;
+     struct kref wd_refs;
+     struct work_struct wd_cleanup_work;
+@@ -2422,12 +2425,15 @@
+ 	reg_uac2_buffer_status(NULL);
+ 	if(uac2->sock)uac2_netlink_exit(uac2->sock);
+ 	uac2->sock = NULL;
+-	kfree(uac2->pextent);
++	vfree(uac2->pextent);
+ 	uac2->pextent = NULL;
+ 	kfree(uac2->p_prm.rbuf);
+ 	uac2->p_prm.rbuf = NULL;
+ 	kfree(uac2->c_prm.rbuf);
+ 	uac2->c_prm.rbuf = NULL;
++	{ unsigned wd_i;for(wd_i=0;wd_i<USB_XFERS;++wd_i){
++		kfree(agdev->wd_capture_bufs[wd_i]);agdev->wd_capture_bufs[wd_i]=NULL;
++	} }
+ 	usb_free_all_descriptors(fn);
+ 	if (agdev->in_ep && agdev->in_ep->driver_data==agdev)
+ 		agdev->in_ep->driver_data = NULL;
+@@ -2465,6 +2471,7 @@
+ //	struct uac2_feedback *pfeedb;
+ 	
+ 	int ret;
++	unsigned wd_i;
+ 
+ 	ret = usb_interface_id(cfg, fn);
+ 	if (ret < 0) {
+@@ -2574,7 +2581,13 @@
+ #if QMU_PACKAGE_NUM
+ 	prm->max_psize = USB_XFERS * QMU_PACKAGE_LENGTH * QMU_PACKAGE_NUM;
+ 	pr_debug("[UAC] prm->max_psize %d\n", prm->max_psize);
+-	prm->rbuf = kzalloc(prm->max_psize, GFP_KERNEL);
++	/* QMU maps one 16KiB payload per request. Sharing one64KiB allocation
++	 * needlessly requires order-4 pages on this long-lived Android system. */
++	for(wd_i=0;wd_i<USB_XFERS;++wd_i){
++		agdev->wd_capture_bufs[wd_i]=kzalloc(QMU_PACKAGE_LENGTH*QMU_PACKAGE_NUM,GFP_KERNEL);
++		if(!agdev->wd_capture_bufs[wd_i])goto err;
++	}
++	prm->rbuf=NULL;
+ #else
+ 	prm->max_psize = hs_epout_desc.wMaxPacketSize;
+ 	prm->rbuf = kzalloc(prm->max_psize * USB_XFERS, GFP_KERNEL);
+@@ -2583,7 +2596,7 @@
+ 	dump_buf_size = prm->max_psize * USB_XFERS;
+ 	pr_debug("[UAC] alloc buffer size 0x%x\n", dump_buf_size);
+ #endif
+-	if (!prm->rbuf) {
++	if (!QMU_PACKAGE_NUM && !prm->rbuf) {
+ 		prm->max_psize = 0;
+ 		dev_err(&uac2->pdev.dev,
+ 			"%s:%d Error!\n", __func__, __LINE__);
+@@ -2600,7 +2613,7 @@
+ 		goto err;
+ 	}
+ 	
+-	uac2->pextent = kzalloc(EXTENT_BUFF_MAX, GFP_KERNEL);
++	uac2->pextent = vzalloc(EXTENT_BUFF_MAX);
+ 	if (!uac2->pextent) {
+ 		prm->max_psize = 0;
+ 		dev_err(&uac2->pdev.dev,
+@@ -2694,7 +2707,7 @@
+         req=c->ur.req;
+ #if QMU_PACKAGE_NUM
+         req->length=QMU_PACKAGE_NUM*QMU_PACKAGE_LENGTH;
+-        req->buf=prm->rbuf+i*req->length;req->number_of_packets=QMU_PACKAGE_NUM;
++        req->buf=a->wd_capture_bufs[i];req->number_of_packets=QMU_PACKAGE_NUM;
+         req->iso_frame_desc=(void *)(a+1)+i*QMU_PACKAGE_NUM*sizeof(struct usb_iso_packet_descriptor);
+         for(j=0;j<QMU_PACKAGE_NUM;++j){
+             req->iso_frame_desc[j].offset=j*QMU_PACKAGE_LENGTH;

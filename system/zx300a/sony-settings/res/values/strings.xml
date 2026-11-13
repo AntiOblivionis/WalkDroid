@@ -1,0 +1,5 @@
+<resources>
+    <string name="sony_audio_title">"Sony Sound"</string>
+    <string name="sony_audio_summary">"Direct output, equalizer, tone, DC phase and vinyl"</string>
+    <string name="sony_dsd_title">"Sony DSD Player"</string>
+</resources>

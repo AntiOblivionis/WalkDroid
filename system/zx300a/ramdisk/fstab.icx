@@ -1,0 +1,3 @@
+# The removable slot is managed by Android.  Its card is mounted read-only by
+# WalkDroid's exFAT integration during this experiment.
+/devices/platform/mtk-msdc.1/mmc_host* auto auto defaults voldmanaged=sdcard1:auto

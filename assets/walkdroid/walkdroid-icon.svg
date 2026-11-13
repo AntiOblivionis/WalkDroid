@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">WalkDroid</title>
+  <desc id="desc">A mint Android robot in mid-stride, wearing cream wired earbuds and carrying an orange portable music player on a dark blue rounded square.</desc>
+  <rect id="background" width="512" height="512" rx="112" fill="#142F3A"/>
+  <g id="walkdroid" transform="rotate(8 256 256)">
+    <!-- Two quiet motion marks echo the forward stride. -->
+    <g id="motion" stroke="#70E2B1" stroke-width="10" stroke-linecap="round">
+      <path d="M110 210h28"/>
+      <path d="M100 235h20"/>
+    </g>
+    <!-- Swinging arm and the lifted back foot. -->
+    <g id="far-limbs" stroke="#39B98D" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M165 245l-24 41-29-18" stroke-width="32"/>
+      <path d="M218 329l-29 51-39-14" stroke-width="43"/>
+    </g>
+    <!-- The forward leg plants the next step. -->
+    <path id="front-leg" d="M284 331l9 48 40 32" stroke="#70E2B1" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="body" d="M182 222h148v100c0 16-13 29-29 29h-90c-16 0-29-13-29-29V222Z" fill="#70E2B1"/>
+    <!-- The antennas and dome retain the familiar Android silhouette. -->
+    <g id="antennae" stroke="#70E2B1" stroke-width="10" stroke-linecap="round">
+      <path d="M207 141l-19-30"/>
+      <path d="M305 141l19-30"/>
+    </g>
+    <path id="head" d="M176 199a80 80 0 0 1 160 0v6H176v-6Z" fill="#70E2B1"/>
+    <g id="eyes" fill="#142F3A">
+      <circle cx="221" cy="173" r="8"/>
+      <circle cx="291" cy="173" r="8"/>
+    </g>
+    <!-- The dark keyline keeps the fine cream cable legible on mint. -->
+    <g id="earbud-cable" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M173 198c0 35 31 56 79 70m86-70c0 35-38 56-86 70v22c0 18 14 27 32 27h45c31 0 49-14 49-35v-20" stroke="#142F3A" stroke-width="10"/>
+      <path d="M173 198c0 35 31 56 79 70m86-70c0 35-38 56-86 70v22c0 18 14 27 32 27h45c31 0 49-14 49-35v-20" stroke="#FFF4DF" stroke-width="5"/>
+    </g>
+    <g id="earbuds" fill="#FFF4DF" stroke="#142F3A" stroke-width="5">
+      <rect x="164" y="180" width="20" height="29" rx="10"/>
+      <rect x="328" y="180" width="20" height="29" rx="10"/>
+    </g>
+    <g id="music-player" transform="translate(14 -4) rotate(-12 377 227)">
+      <rect x="346" y="175" width="64" height="95" rx="11" fill="#FFAC69" stroke="#142F3A" stroke-width="6"/>
+      <rect x="357" y="187" width="42" height="38" rx="5" fill="#142F3A"/>
+      <g id="equalizer" stroke="#70E2B1" stroke-width="4" stroke-linecap="round">
+        <path d="M366 209v6m8-17v17m8-22v22m8-13v13"/>
+      </g>
+      <circle cx="378" cy="245" r="11" fill="#142F3A"/>
+      <path d="M375 240l8 5-8 5v-10Z" fill="#FFF4DF"/>
+    </g>
+    <!-- One uninterrupted capsule forms the entire straight arm and palm.
+         Drawing it above the player's lower edge makes the supporting grip visible. -->
+    <path id="player-arm" d="M345 244L402 275" stroke="#70E2B1" stroke-width="32" stroke-linecap="round"/>
+  </g>
+</svg>

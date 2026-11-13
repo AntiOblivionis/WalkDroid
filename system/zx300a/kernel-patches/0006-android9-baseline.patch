@@ -1,0 +1,81 @@
+--- a/arch/arm/mm/mmap.c
++++ b/arch/arm/mm/mmap.c
+@@ -173,10 +173,10 @@
+ {
+ 	unsigned long random_factor = 0UL;
+ 
+-	/* 8 bits of randomness in 20 address space bits */
++	/* WalkDroid: preserve B90 16-bit mmap randomization for Android9. */
+ 	if ((current->flags & PF_RANDOMIZE) &&
+ 	    !(current->personality & ADDR_NO_RANDOMIZE))
+-		random_factor = (get_random_int() % (1 << 8)) << PAGE_SHIFT;
++		random_factor = (get_random_int() % (1 << 16)) << PAGE_SHIFT;
+ 
+ 	if (mmap_is_legacy()) {
+ 		mm->mmap_base = TASK_UNMAPPED_BASE + random_factor;
+--- a/fs/timerfd.c
++++ b/fs/timerfd.c
+@@ -316,6 +316,7 @@
+ 	if ((flags & ~TFD_CREATE_FLAGS) ||
+ 	    (clockid != CLOCK_MONOTONIC &&
+ 	     clockid != CLOCK_REALTIME &&
++	     clockid != CLOCK_BOOTTIME &&
+ 	     clockid != CLOCK_REALTIME_ALARM &&
+ 	     clockid != CLOCK_BOOTTIME_ALARM))
+ 		return -EINVAL;
+--- a/mm/swapfile.c
++++ b/mm/swapfile.c
+@@ -591,9 +591,10 @@
+ 	return NULL;
+ }
+ 
+-void swap_info_unlock(void)
+-{
+-        spin_unlock(&swap_lock);
++/* Paired with swap_info_get(entry), which locks this exact p. */
++void swap_info_unlock(struct swap_info_struct *p)
++{
++	spin_unlock(&p->lock);
+ }
+ 
+ /*
+--- a/fs/proc/task_mmu.c
++++ b/fs/proc/task_mmu.c
+@@ -502,7 +502,7 @@
+ 
+ #ifdef CONFIG_SWAP 
+ extern struct swap_info_struct *swap_info_get(swp_entry_t entry);
+-extern void swap_info_unlock(void);
++extern void swap_info_unlock(struct swap_info_struct *p);
+ #endif // CONFIG_SWAP 
+ 
+ static inline unsigned char swap_count(unsigned char ent)
+@@ -543,7 +543,7 @@
+ 					swapcount = 1;
+ 				}
+ 				mss->pswap += (ptent_size << PSS_SHIFT) / swapcount;
+-				swap_info_unlock();
++				swap_info_unlock(p);
+ 			}
+ #endif // CONFIG_SWAP
+ 		} else if (is_migration_entry(swpent))
+--- a/fs/proc/page.c
++++ b/fs/proc/page.c
+@@ -74,7 +74,7 @@
+ 
+ #ifdef CONFIG_SWAP
+ extern struct swap_info_struct *swap_info_get(swp_entry_t entry);
+-extern void swap_info_unlock(void);
++extern void swap_info_unlock(struct swap_info_struct *p);
+ 
+ static inline unsigned char swap_count(unsigned char ent)
+ {
+@@ -111,7 +111,7 @@
+ 			printk(KERN_INFO "kpageswapn_read put user failed\n");
+ 			ret = -EFAULT;
+ 		}
+-		swap_info_unlock();
++		swap_info_unlock(p);
+ 	} else {
+ 		printk(KERN_INFO "kpageswapn_read swap_info_get failed\n");
+ 		ret = -EFAULT;

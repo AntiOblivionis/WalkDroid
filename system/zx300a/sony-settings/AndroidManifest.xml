@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.walkdroid.sony.audio" android:versionCode="116" android:versionName="WalkDroid B116">
+ <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="28"/>
+ <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+ <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+ <uses-permission android:name="android.permission.WAKE_LOCK"/>
+ <application android:label="@string/sony_audio_title" android:theme="@android:style/Theme.Material.Light" android:allowBackup="false" android:supportsRtl="true">
+  <activity android:name=".SonyAudioSettings" android:exported="true" android:label="@string/sony_audio_title">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+   <intent-filter><action android:name="com.android.settings.action.EXTRA_SETTINGS"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+   <meta-data android:name="com.android.settings.category" android:value="com.android.settings.category.ia.sound"/>
+   <meta-data android:name="com.android.settings.title" android:resource="@string/sony_audio_title"/>
+   <meta-data android:name="com.android.settings.summary" android:resource="@string/sony_audio_summary"/>
+   <meta-data android:name="com.android.settings.icon" android:resource="@android:drawable/ic_lock_silent_mode_off"/>
+  </activity>
+  <activity android:name=".SonyDsfPlayerActivity" android:exported="true" android:launchMode="singleTop" android:label="@string/sony_dsd_title">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+   <intent-filter><action android:name="android.intent.action.VIEW"/><category android:name="android.intent.category.DEFAULT"/><data android:scheme="content" android:mimeType="audio/dsf"/></intent-filter>
+   <intent-filter><action android:name="android.intent.action.VIEW"/><category android:name="android.intent.category.DEFAULT"/><data android:scheme="content" android:mimeType="audio/x-dsf"/></intent-filter>
+  </activity>
+  <service android:name=".SonyDsfPlayerService" android:exported="false" android:stopWithTask="true"/>
+  <service android:name=".SonyUsbReceiverService" android:exported="false" android:stopWithTask="false"/>
+  <service android:name=".SonyBtReceiverService" android:exported="false" android:stopWithTask="false"/>
+  <service android:name=".SonyBtOutputService" android:exported="false" android:stopWithTask="false"/>
+ </application>
+</manifest>

@@ -1,0 +1,9 @@
+[
+  "sony/setup_android.sh",
+  "sony/stable-b90/restore.sh",
+  "sony/radio/BT_Addr-factory",
+  "sony/sony-audio-runtime/SHA256SUMS",
+  "sony/sony-audio-runtime/FULL_SHA256SUMS",
+  "sony/sony-audio-runtime/root-check",
+  "sony/bt-output/SHA256SUMS"
+]

@@ -1,0 +1,5 @@
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.cpu.abi=armeabi-v7a
+ro.product.cpu.abi2=armeabi
+ro.dalvik.vm.native.bridge=0

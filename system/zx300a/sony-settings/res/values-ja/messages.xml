@@ -1,0 +1,373 @@
+<resources>
+    <string-array name="walkdroid_messages">
+        <item>"アプリ専用サービスはまだ準備が整っていません"</item>
+        <item>"アプリ専用サービスが応答しません"</item>
+        <item>"アプリケーションリスト"</item>
+        <item>"独自のリードバック形式"</item>
+        <item>"現在の設定は変更できません"</item>
+        <item>"制御操作に失敗しました ("</item>
+        <item>"USB DAC のステータスが確認されていません。このページを再度開いて読んでください。"</item>
+        <item>"Bluetoothの受信状況が確認できませんでした。再度このページをご覧ください。"</item>
+        <item>"Bluetooth 出力ステータスが確認されていません。このページをもう一度開いて読んでください。"</item>
+        <item>"サウンド設定はまだ確認待ちです"</item>
+        <item>"Sony サウンド"</item>
+        <item>"サウンド設定を読み取っています..."</item>
+        <item>"USB DAC ステータスを読み取り中..."</item>
+        <item>"Bluetooth受信"</item>
+        <item>"Bluetooth 受信ステータスを読み取り中..."</item>
+        <item>"Bluetooth出力デバイス"</item>
+        <item>"ペアリングされたデバイスを読み取り中..."</item>
+        <item>"Bluetooth出力"</item>
+        <item>"Bluetooth 出力ステータスを読み取り中..."</item>
+        <item>"Bluetoothデバイスの音量"</item>
+        <item>"接続後にデバイスの音量を調整できます"</item>
+        <item>"Bluetooth絶対ボリューム"</item>
+        <item>"専用アプリ"</item>
+        <item>"排他ステータスを読み取り中..."</item>
+        <item>"DSD再生"</item>
+        <item>"DSF ファイルを選択し、DSD を PCM に変換して 3.5 mm 端子から再生します。"</item>
+        <item>"ダイレクトソース"</item>
+        <item>"純正のダイレクトソースを使用します。オフにすると以下の音質設定が使えます。"</item>
+        <item>"保存されたサウンド設定"</item>
+        <item>"現在のサウンド設定を保存する"</item>
+        <item>"EQ、トーン、DSEE HX、DC フェーズ、ビニール、ダイナミック ボリューム EQ を含む 3 つの設定セットのいずれかに保存します。"</item>
+        <item>"サウンド設定をロードする"</item>
+        <item>"保存された効果音を読み込みます。現在のボリューム、ゲイン、ダイレクト、DSD、および Walkman One の再生モードを維持します。"</item>
+        <item>"ヘッドフォン出力"</item>
+        <item>"ウォークマンの音量"</item>
+        <item>"AVLSの音量制限"</item>
+        <item>"元の工場出荷時の電流出力とゲインに従ってボリュームを制限します。オフにしても自動的に音量は上がりません。"</item>
+        <item>"3.5mmハイゲイン"</item>
+        <item>"切り替えるときは、工場出荷時の規定に従って音量を調整してください。目標の初期ボリュームよりも低い場合は、元の値を維持します。"</item>
+        <item>"4.4mmハイゲイン"</item>
+        <item>"4.4mmバランス出力はまだ完成していません。"</item>
+        <item>"ネイティブDSD"</item>
+        <item>"まだ完成していません。 3.5 mm DSD から PCM への変換は現在利用可能です。"</item>
+        <item>"左チャンネルの減衰"</item>
+        <item>"右チャンネルの減衰"</item>
+        <item>"再生モード"</item>
+        <item>"CFWチューニングの方向性"</item>
+        <item>"未指定 (現在のリンクを維持)"</item>
+        <item>"実験的オプション: 完全なチューニング効果はまだ検証中です。再生停止後に切り替え可能。"</item>
+        <item>"CFWボリュームモード(GMD)"</item>
+        <item>"ノーマル"</item>
+        <item>"より高い"</item>
+        <item>"下位"</item>
+        <item>"DSD再生設定"</item>
+        <item>"現在のDSD処理"</item>
+        <item>"DSDフィルター"</item>
+        <item>"遅いロールオフ"</item>
+        <item>"シャープなロールオフ"</item>
+        <item>"DSDゲイン"</item>
+        <item>"イコライザーとトーン"</item>
+        <item>"調整方法"</item>
+        <item>"10バンドイコライザー"</item>
+        <item>"3 バンドトーン"</item>
+        <item>"10バンドイコライザーを選択し、ストレートアウトをオフにした後に有効になります。"</item>
+        <item>"周波数帯域 "</item>
+        <item>"トーンコントロール"</item>
+        <item>"3バンドトーンを選択し、ダイレクト出力をオフにすると有効になります。"</item>
+        <item>"低音"</item>
+        <item>"中音"</item>
+        <item>"高音域"</item>
+        <item>"ソニー独自のアップスケーリング処理を採用しているため、ダイレクト出力ON時は対象外となります。"</item>
+        <item>"DSEEモード"</item>
+        <item>"標準"</item>
+        <item>"女性ボーカル"</item>
+        <item>"男性ボーカル"</item>
+        <item>"パーカッション"</item>
+        <item>"弦楽器"</item>
+        <item>"現在の処理"</item>
+        <item>"DC位相リニアライザー"</item>
+        <item>"独自の位相処理を採用。"</item>
+        <item>"フェーズモード"</item>
+        <item>"タイプA LOW"</item>
+        <item>"タイプAスタンダード"</item>
+        <item>"タイプAハイ"</item>
+        <item>"タイプB LOW"</item>
+        <item>"タイプB スタンダード"</item>
+        <item>"タイプB HIGH"</item>
+        <item>"バイナルプロセッサー"</item>
+        <item>"純正のバイナルプロセッサーを使用します。"</item>
+        <item>"バイナルモード"</item>
+        <item>"トーンアームの共振"</item>
+        <item>"ターンテーブルの共鳴"</item>
+        <item>"サーフェスノイズ"</item>
+        <item>"ダイナミックノーマライザー"</item>
+        <item>"ソニー独自の処理により曲間の音量差を軽減。ダイレクトアウトがオンになっている場合は効果がありません。"</item>
+        <item>"現在のサポート範囲"</item>
+        <item>"USB DAC と Bluetooth 受信は音声出力を排他使用します。有効にする前にヘッドホンを接続し、音量を調整してください。DSEE AI は 44.1 / 48 kHz のステレオ PCM に対応し、その他の形式は Sony の処理に従います。4.4 mm 出力とネイティブ DSD は未完成で、追加の CFW 音質も調整中です。"</item>
+        <item>"Bluetooth出力・ "</item>
+        <item>"モードを選択してください"</item>
+        <item>"ネイティブDSD・4.4mm"</item>
+        <item>"ソニーオリジナルDSDをPCMに変換"</item>
+        <item>"モードを取得していません"</item>
+        <item>" ・再生停止後に切り替え可能"</item>
+        <item>"未確認"</item>
+        <item>"現在有効:"</item>
+        <item>"保存済み:"</item>
+        <item>";現在有効:"</item>
+        <item>"。変更後は再起動し、別途ヘッドホンハイゲインスイッチで設定する必要があります。"</item>
+        <item>"現在の出力："</item>
+        <item>"最後に再生された出力:"</item>
+        <item>"ハイゲイン"</item>
+        <item>"ノーマルゲイン"</item>
+        <item>"。元の音量は調整できます。その他のサウンド設定を行う場合は、まず受信をオフにしてください。"</item>
+        <item>"。受信をOFFにしてから音声設定を変更してください。"</item>
+        <item>"。 DSF はファクトリー ボリュームを使用します。 Android のメディア ミックスやソフトウェアのボリュームではありません。"</item>
+        <item>"。プレーヤーの音量と Android メディアの音量が連動して音量が決まります。"</item>
+        <item>"有効・現在の上限値 "</item>
+        <item>"USB DAC（状態確認中）"</item>
+        <item>"Bluetooth受信（状態確認中）"</item>
+        <item>" 受信をOFFにしてから音声設定を変更してください。"</item>
+        <item>"接続後のデバイスステータスの読み取り"</item>
+        <item>"元の方法に従って相対ボリューム指示を送信します"</item>
+        <item>"機器から通知された音量で調整し、機器の確認を待ちます。"</item>
+        <item>"有効。現在の接続は、元の工場出荷時の相対ボリューム方式に従って調整されます。"</item>
+        <item>"下げる"</item>
+        <item>"上げる"</item>
+        <item>"キャンセル"</item>
+        <item>"装置の状態は確認できません。クリックしてもう一度お読みください。"</item>
+        <item>"未選択 · ペアリングされたデバイス "</item>
+        <item>" 台"</item>
+        <item>" · 選択済み"</item>
+        <item>"デバイスが指定されていません"</item>
+        <item>"ブルートゥースデバイス"</item>
+        <item>"デバイスの選択を保存中…"</item>
+        <item>"独占ステータスが確認されていません。クリックして再読してください"</item>
+        <item>"指定なし・通常再生"</item>
+        <item>" ・専用"</item>
+        <item>"アプリケーションを読み込んでいます..."</item>
+        <item>"指定なし（通常再生）"</item>
+        <item>"専用アプリを切り替え中…"</item>
+        <item>"サウンド設定1"</item>
+        <item>"サウンド設定2"</item>
+        <item>"サウンド設定3"</item>
+        <item>"サウンド設定を保存しています..."</item>
+        <item>"サウンド設定を読み込んでいます..."</item>
+        <item>"プリセット要求に失敗（"</item>
+        <item>"送信された保存リクエスト: サウンド設定 "</item>
+        <item>"送信されたロードリクエスト: サウンド設定 "</item>
+        <item>"プリセット操作を確認できません"</item>
+        <item>"プレーヤーの状態が再読み取りされます。まだ初期化されていないプリセットは、最初に保存する必要があります。"</item>
+        <item>"OK"</item>
+        <item>"適用して保存しています..."</item>
+        <item>"セットアップ要求が失敗しました ("</item>
+        <item>"セットアップリクエストが送信されました"</item>
+        <item>"AVLS 制限が送信された後のボリューム要求"</item>
+        <item>"設定の適用に失敗しました"</item>
+        <item>"この設定は未確認のため、プレイヤーのステータスが再読み込みされます。"</item>
+        <item>"セットアップリクエストは受け付けられません"</item>
+        <item>"セットアップ要求が送信されました。現在の出力ステータスを再読み取り可能"</item>
+        <item>"設定未確認"</item>
+        <item>"プレイヤーのステータスが再読み込みされます。このリクエストは自動的に再送信されません。"</item>
+        <item>"Bluetooth 受信で排他使用中 · "</item>
+        <item>"出力はオンです · "</item>
+        <item>" ・出力ミュート"</item>
+        <item>"準備完了・モバイルオーディオを待っています"</item>
+        <item>" ・オリジナルの音量を調整可能・効果音は読み取り専用"</item>
+        <item>" · 現在のサウンド設定は読み取り専用です"</item>
+        <item>"USB DAC で排他使用中 · "</item>
+        <item>"出力・ "</item>
+        <item>"出力ミュート"</item>
+        <item>"再生中"</item>
+        <item>"準備完了・音声待ち中"</item>
+        <item>"ネイティブDSD専用出力対応・ "</item>
+        <item>"オリジナルの音量を調整可能"</item>
+        <item>"現在の設定は読み取り専用です"</item>
+        <item>"DSF専用出力準備完了・ "</item>
+        <item>"調整可能なサウンドエフェクト・調整可能なオリジナルボリューム"</item>
+        <item>"オリジナルサウンド設定が読み込まれています・ "</item>
+        <item>"スタンバイ"</item>
+        <item>"サウンド設定はビジー状態のため、後で自動的に更新されます。"</item>
+        <item>"現在の音の状態は未確認のため再読み込み中です。"</item>
+        <item>"Bluetooth デバイス サービスはまだ準備ができていません"</item>
+        <item>"デバイスリストが未確認"</item>
+        <item>"Bluetooth デバイス サービスが応答しない"</item>
+        <item>"Bluetooth デバイスのリードバック形式"</item>
+        <item>"Bluetooth出力サービスはまだ準備ができていません"</item>
+        <item>"Bluetooth 出力サービスが応答しない"</item>
+        <item>"Bluetooth 出力応答フォーマット"</item>
+        <item>"ソニーのBluetooth出力"</item>
+        <item>"オフ"</item>
+        <item>"Bluetooth 出力ステータスが確認されていません。もう一度読んでください。"</item>
+        <item>"接続中…"</item>
+        <item>"オフにしています…"</item>
+        <item>"携帯電話"</item>
+        <item>"オン：ペアリング済みのスマートフォンを接続して再生してください。"</item>
+        <item>"Bluetoothオーディオリンクがオンになっています · "</item>
+        <item>"DSEE 処理ステータスが不完全です"</item>
+        <item>"DSEEステータスタグが無効です"</item>
+        <item>"DSEE サンプリング レートが無効です"</item>
+        <item>"DSEE AIの実際の処理状況がばらつきがある"</item>
+        <item>"オフ"</item>
+        <item>"DSEE AIが処理・入力中 "</item>
+        <item>" ・出力待ち"</item>
+        <item>" ・出力 "</item>
+        <item>"現在のフォーマットはソニー独自のDSEE HXルールに従って処理されます"</item>
+        <item>"DSEE AI選択時・44.1/48kHzステレオPCMの場合"</item>
+        <item>"DSEE HX・ソニー独自の工場適用条件に従って処理"</item>
+        <item>"DSEE HXが選択されています。再生は工場出荷時の適用条件に従って処理されます。"</item>
+        <item>" ・入力 "</item>
+        <item>"ソニーのDSD再生"</item>
+        <item>"DSFファイルを選択"</item>
+        <item>"再生"</item>
+        <item>"停止"</item>
+        <item>"サウンド設定"</item>
+        <item>"再生ステータスを更新する"</item>
+        <item>"3.5 mm 端子では DSD を PCM に変換します。フィルターと DSD ゲインはサウンド設定で調整できます。4.4 mm 出力とネイティブ DSD は未完成です。"</item>
+        <item>"再生ステータスを読み取り中..."</item>
+        <item>"ネイティブDSD・DSD"</item>
+        <item>"Sony DSD→PCM · "</item>
+        <item>"DSF ファイルがまだ選択されていません"</item>
+        <item>"Walkman の音量 "</item>
+        <item>"Walkman の音量を確認できません"</item>
+        <item>"ファイルを準備しています…"</item>
+        <item>"開始中..."</item>
+        <item>"Playサービスは終了しました"</item>
+        <item>"再生バックエンドがエラーを返す "</item>
+        <item>"再生中 · "</item>
+        <item>"停止中…"</item>
+        <item>"オリジナルの再生チェーンを開始しています..."</item>
+        <item>"再生できませんでした（エラー） "</item>
+        <item>"再生終了"</item>
+        <item>"停止しました"</item>
+        <item>"ファイルの準備ができました"</item>
+        <item>"DSF ファイルを選択してください"</item>
+        <item>"再生ステータスが確認されていません。ステータスを更新して再試行してください"</item>
+        <item>"プレイチェーンはまだリリースされていません"</item>
+        <item>"再生フォーカスを取得できません"</item>
+        <item>"まずはプレイを停止してステータスを確認してください"</item>
+        <item>"読み取り可能な DSF ファイルを選択してください"</item>
+        <item>"DSF ファイルを準備しています..."</item>
+        <item>"DSFファイル"</item>
+        <item>".dsf ファイルを選択してください"</item>
+        <item>"未完成のファイルをクリーンアップできません"</item>
+        <item>"ストレージの空き容量が不足しています"</item>
+        <item>"ファイルを読み取れません"</item>
+        <item>"準備がキャンセルされました"</item>
+        <item>"ファイルが利用可能なスペースを超えています"</item>
+        <item>"DSF ファイルが不完全です"</item>
+        <item>"準備したファイルを保存できません"</item>
+        <item>"ファイルを準備できません:"</item>
+        <item>"工場出荷時のボリューム要求は受け入れられません"</item>
+        <item>"ボリュームの結果は確認されていません。自動的に再送信されません"</item>
+        <item>"まだ準備ができていない限定サービスを受けることができます"</item>
+        <item>"受信専用サービスが応答しない"</item>
+        <item>"受信排他応答フォーマット"</item>
+        <item>"Bluetooth出力のシャットダウンはまだ未確認"</item>
+        <item>"排他的保護を受けることはまだ確認されていません"</item>
+        <item>"受付は終了していません"</item>
+        <item>"別の受信インスタンスがまだ占有されています"</item>
+        <item>"システム音の復旧は未確認です"</item>
+        <item>"受信ステータス応答が不完全です"</item>
+        <item>"受信ステータス応答の不一致"</item>
+        <item>"無効な受信ステータス応答"</item>
+        <item>"閉店状況は未確認"</item>
+        <item>"受信セッション ID がありません"</item>
+        <item>"独占ステータスはまだ確認されていません"</item>
+        <item>"不完全故障ステータス入力"</item>
+        <item>"リソース予約ステータスが不完全です"</item>
+        <item>"退出プロセスはまだ完了していません"</item>
+        <item>"USB DACをオンにしています…"</item>
+        <item>"オン：パソコンからの音声を待機中。"</item>
+        <item>"有効になっており、音声を受信しています..."</item>
+        <item>"コンピュータの入力形式はまだサポートされていません。独占はまだ予約されています。閉じて再度開いてください。"</item>
+        <item>"音声入力が中断されます。排他性が残っていますので、一度オフにしてから再度オンにしてください。"</item>
+        <item>"オフにしてシステム音声を復元しています…"</item>
+        <item>"終了ステータスが確認されていないため、プレーヤーを再起動してください。"</item>
+        <item>"電源が入っていません。最初にヘッドフォンを接続してください。"</item>
+        <item>"有効になっていません。最初に他の再生を停止してください。"</item>
+        <item>"電源をオンにできませんでした。ヘッドセットとコンピューター間の接続を確認してください。"</item>
+        <item>"オフ;電源を入れる前に、ヘッドフォンを接続し、音量を調整してください。"</item>
+        <item>"コンピュータ"</item>
+        <item>"USB DAC をシャットダウンしています…"</item>
+        <item>"受信サービスを終了しました"</item>
+        <item>"受信リクエスト数がなくなりました"</item>
+        <item>"受信ステータスにサポートされていない記述子が含まれています"</item>
+        <item>"受信排他保護が欠落しており、シャットダウン結果が未確認です"</item>
+        <item>"受信排他的保護がありません。シャットダウンを確認します"</item>
+        <item>"受信保護がリセットされ、受信がオフになりました。もう一度オンにしてください。"</item>
+        <item>"USB DAC ステータスが確認されていません。再読み取り中です..."</item>
+        <item>"USB DAC のステータスを確認できません。このページを再度開いて読んでください。"</item>
+        <item>"ステータスはまだ読み込まれていません"</item>
+        <item>"読出し専用ステータス"</item>
+        <item>"ユーザーが切り替わり、排他選択が解除されました"</item>
+        <item>"専用スイッチは未確認"</item>
+        <item>"排他的切り替えに失敗しました ("</item>
+        <item>"通常再生、専用アプリ指定なし"</item>
+        <item>"独占性が有効です:"</item>
+        <item>"選択は有効になりましたが、保存できませんでした"</item>
+        <item>"アプリケーションのインストール ID が変更され、排他的選択がクリアされました。"</item>
+        <item>" 排他的保護下にある。"</item>
+        <item>"終了後に通常の再生を再開します"</item>
+        <item>"アプリケーションの選択を維持します:"</item>
+        <item>"排他状態は確認されていません（"</item>
+        <item>"）、もう一度読んでください"</item>
+        <item>"受信保護は保持されています。対応する受信モードをオンにしてステータスを確認してください。"</item>
+        <item>"独占権が回復されました:"</item>
+        <item>"受信側インターフェイスは終了し、排他的保護は保持されます。再度開いて閉じていることを確認してください。"</item>
+        <item>"Bluetooth 出力をオフにし、排他的な受信を待機しています"</item>
+        <item>"別の受信インスタンスがハンドオーバー中です"</item>
+        <item>"Bluetooth デバイスのステータスがまだ読み込まれていません"</item>
+        <item>"Bluetooth 出力デバイスが選択されていません"</item>
+        <item>"Bluetooth 出力デバイスが選択されました"</item>
+        <item>"デバイスリストが変更されました。リストを再度開いてください"</item>
+        <item>"保存結果が確認できていないので、もう一度読んでください"</item>
+        <item>"Bluetooth デバイスのステータスが確認されていません。もう一度読んでください。"</item>
+        <item>"Bluetooth出力ステータスの読み取り"</item>
+        <item>"Bluetooth動作未確認（"</item>
+        <item>"Bluetooth 受信が確認できず、接続を切断中です。"</item>
+        <item>"最初に Bluetooth 出力デバイスを選択してください"</item>
+        <item>"未接続"</item>
+        <item>"接続済み"</item>
+        <item>"Bluetooth 接続に失敗しました ("</item>
+        <item>"Bluetooth 接続が確認されていないため、終了します"</item>
+        <item>"受信モードは排他モードとなり、Bluetooth 出力はオフになります。"</item>
+        <item>"最初に Bluetooth 出力デバイスを選択します"</item>
+        <item>"接続中："</item>
+        <item>"Android Bluetooth がまだオフになっていません"</item>
+        <item>"Android Bluetooth のシャットダウンは確認されていません"</item>
+        <item>"Bluetooth 接続がタイムアウトしたため終了しています"</item>
+        <item>"Bluetooth出力をオフにする"</item>
+        <item>"Android ルーティングは他の接続に属します"</item>
+        <item>"Android ルーティングのシャットダウンはまだ確認されていません"</item>
+        <item>"Bluetooth 出力がオフになり、受信モードに入ることができます"</item>
+        <item>"受信の排他使用がまだ解除されていません"</item>
+        <item>"Android Bluetooth リカバリは受け入れられません"</item>
+        <item>"Bluetooth 出力がオフになっており、Android Bluetooth が復元されています"</item>
+        <item>"Android Bluetoothの復元"</item>
+        <item>"AndroidのBluetoothステータスが変更されました"</item>
+        <item>"未接続（最終動作未確認）"</item>
+        <item>"Bluetooth出力状態未確認（"</item>
+        <item>"現時点ではBluetoothの音量を調整できません"</item>
+        <item>"音量コマンドを送信しました。実際の音量は機器の通知をご確認ください。"</item>
+        <item>"Bluetooth デバイスの音量は確認されていません。今回は再送されません"</item>
+        <item>"機器の音量 "</item>
+        <item>"デバイスが現在の音量を報告しない"</item>
+        <item>"デバイスの音量を調整しています..."</item>
+        <item>"送信済み、デバイスの確認を待っています"</item>
+        <item>"調整を確認できません（"</item>
+        <item>"音声を転送中"</item>
+        <item>"接続済み、再生待ち"</item>
+        <item>"準備ができて;ボリュームアクションを待っています"</item>
+        <item>"ボリューム操作が密すぎる。今回は送信されませんでした"</item>
+        <item>"ボリューム操作の有効期限が切れました。今回は送信されませんでした"</item>
+        <item>"現時点では元の音量を調整することはできません。"</item>
+        <item>"ボリュームリクエストが送信されました:"</item>
+        <item>"ソニーのボリュームは確認されていません。今回は再発行されません"</item>
+        <item>"オリジナルの工場管理は受け入れられません"</item>
+        <item>"元の工場出荷時の制御待機タイムアウト"</item>
+        <item>"Bluetooth の受信状況が確認されていません。このページをもう一度開いて読んでください。"</item>
+        <item>"Bluetooth 受信ステータスを読み取り中..."</item>
+        <item>"Bluetooth受信とBluetooth受信は専用の音声出力を備えています。電源を入れる前にヘッドフォンを接続し、音量を調整してください。 DSEE AI は 44.1/48 kHz ステレオ PCM に適しています。他の形式は、元の工場処理ルールに従います。 4.4 mm とネイティブ DSD はまだ完成しておらず、CFW チューニングの方向性はまだ調整中です。"</item>
+        <item>"Bluetooth受信専用"</item>
+        <item>"Bluetooth受信をオンにしています..."</item>
+        <item>"オン：スマートフォンからの音声を待機中。"</item>
+        <item>"携帯電話の入力形式はまだサポートされていません。独占権はまだ予約されています。閉じて再度開いてください。"</item>
+        <item>"電源をオンにできませんでした。ヘッドセットと携帯電話の間の接続を確認してください。"</item>
+        <item>"Bluetooth受信をオフにしています..."</item>
+        <item>"Bluetooth 受信状態が確認できませんでした。再読み取り中です..."</item>
+        <item>"Bluetooth の受信状態を確認できません。このページをもう一度開いて読んでください。"</item>
+    </string-array>
+</resources>

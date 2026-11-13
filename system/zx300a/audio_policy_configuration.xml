@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WalkDroid Sony PCM policy. Bluetooth routing configuration remains present. -->
+<audioPolicyConfiguration version="1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+ <globalConfiguration speaker_drc_enabled="false"/>
+ <modules><module name="primary" halVersion="2.0">
+  <attachedDevices><item>Disconnected</item></attachedDevices>
+  <defaultOutputDevice>Disconnected</defaultOutputDevice>
+  <mixPorts>
+   <mixPort name="primary output" role="source" flags="AUDIO_OUTPUT_FLAG_PRIMARY">
+    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+   </mixPort>
+   <mixPort name="sony shared" role="source">
+    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+   </mixPort>
+   <mixPort name="sony direct" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT">
+    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000,352800,384000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+    <profile name="" format="AUDIO_FORMAT_PCM_32_BIT" samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000,352800,384000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+    <profile name="" format="AUDIO_FORMAT_PCM_FLOAT" samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000,352800,384000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+   </mixPort>
+  </mixPorts>
+  <devicePorts>
+   <devicePort tagName="Wired Headphones" type="AUDIO_DEVICE_OUT_WIRED_HEADPHONE" role="sink">
+    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000,352800,384000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+    <profile name="" format="AUDIO_FORMAT_PCM_32_BIT" samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000,352800,384000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+    <profile name="" format="AUDIO_FORMAT_PCM_FLOAT" samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000,352800,384000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+   </devicePort>
+   <devicePort tagName="Disconnected" type="AUDIO_DEVICE_OUT_BUS" role="sink">
+    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+   </devicePort>
+  </devicePorts>
+  <routes>
+   <route type="mix" sink="Wired Headphones" sources="sony shared,sony direct"/>
+   <route type="mix" sink="Disconnected" sources="primary output"/>
+  </routes>
+ </module>
+  <module name="a2dp" halVersion="2.0">
+   <mixPorts><mixPort name="a2dp output" role="source"/></mixPorts>
+   <devicePorts><devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink">
+    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="44100,48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+   </devicePort></devicePorts>
+   <routes><route type="mix" sink="BT A2DP Out" sources="a2dp output"/></routes>
+  </module>
+ </modules>
+ <xi:include href="/system/etc/audio_policy_volumes.xml"/>
+ <xi:include href="/system/etc/default_volume_tables.xml"/>
+</audioPolicyConfiguration>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="sony_audio_title">"Sony サウンド"</string>
+    <string name="sony_audio_summary">"ダイレクトソース、イコライザー、トーン、DC 位相、バイナル"</string>
+    <string name="sony_dsd_title">"Sony DSD プレーヤー"</string>
+</resources>

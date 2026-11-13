@@ -1,0 +1,155 @@
+[
+  {
+    "path": "default.prop",
+    "mode": 33188
+  },
+  {
+    "path": "fstab.icx",
+    "mode": 33188
+  },
+  {
+    "path": "init",
+    "mode": 33261
+  },
+  {
+    "path": "ueventd.goldfish.rc",
+    "mode": 33188
+  },
+  {
+    "path": "ueventd.ranchu.rc",
+    "mode": 33188
+  },
+  {
+    "path": "ueventd.rc",
+    "mode": 33188
+  },
+  {
+    "path": "init.environ.rc",
+    "mode": 33188
+  },
+  {
+    "path": "sony/adbd-launch.sh",
+    "mode": 33261
+  },
+  {
+    "path": "vendor/default.prop",
+    "mode": 33188
+  },
+  {
+    "path": "init.rc",
+    "mode": 33188
+  },
+  {
+    "path": "vendor/build.prop",
+    "mode": 33188
+  },
+  {
+    "path": "sony/setup_properties.sh",
+    "mode": 33261
+  },
+  {
+    "path": "init.zx9.data.rc",
+    "mode": 33188
+  },
+  {
+    "path": "sony/setup_graphics.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/framework_env.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/setup_safe_zram.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/lineage_provision.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/lineage_early_properties.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/walkdroid-build",
+    "mode": 33188
+  },
+  {
+    "path": "sony/walkdroid-fingerprint",
+    "mode": 33188
+  },
+  {
+    "path": "sony/zx9-codec-launch.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/radio/init.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/radio/local-config.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/radio/hal-launch.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/radio/system-apps.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/power-access.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/audio-dac/init.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/sony-audio-runtime/setup.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/sony-audio-runtime/audio-service.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/jack-framework/setup.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/usb-settings/receiver-log.sh",
+    "mode": 33261
+  },
+  {
+    "path": "sony/bt-settings/receiver-log.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/app-policy/setup.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/bt-output/setup.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/bt-catalog/run.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/bt-link/run.sh",
+    "mode": 33133
+  },
+  {
+    "path": "sony/player/run.sh",
+    "mode": 33261
+  },
+  {
+    "path": "vendor/etc/audio_policy_configuration.xml",
+    "source": "../audio_policy_configuration.xml",
+    "mode": 33188
+  }
+]

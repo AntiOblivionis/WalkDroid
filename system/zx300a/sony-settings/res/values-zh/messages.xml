@@ -1,0 +1,373 @@
+<resources>
+    <string-array name="walkdroid_messages">
+        <item>"应用独占服务尚未就绪"</item>
+        <item>"应用独占服务未响应"</item>
+        <item>"应用列表"</item>
+        <item>"独占回读格式"</item>
+        <item>"当前设置不可更改"</item>
+        <item>"控制操作失败（"</item>
+        <item>"USB DAC 状态未确认，请重新打开此页读取。"</item>
+        <item>"蓝牙接收状态未确认，请重新打开此页读取。"</item>
+        <item>"蓝牙输出状态未确认，请重新打开此页读取。"</item>
+        <item>"声音设置仍在等待确认"</item>
+        <item>"Sony 声音"</item>
+        <item>"正在读取声音设置…"</item>
+        <item>"正在读取 USB DAC 状态…"</item>
+        <item>"蓝牙接收"</item>
+        <item>"正在读取蓝牙接收状态…"</item>
+        <item>"蓝牙输出设备"</item>
+        <item>"正在读取已配对设备…"</item>
+        <item>"蓝牙输出"</item>
+        <item>"正在读取蓝牙输出状态…"</item>
+        <item>"蓝牙设备音量"</item>
+        <item>"连接后可调整设备音量"</item>
+        <item>"蓝牙绝对音量"</item>
+        <item>"独占应用"</item>
+        <item>"正在读取独占状态…"</item>
+        <item>"DSD 播放"</item>
+        <item>"选择 DSF 文件，通过 3.5 mm 输出 DSD 转 PCM。"</item>
+        <item>"直出"</item>
+        <item>"按原厂直出行为处理；关闭后使用下方音效。"</item>
+        <item>"保存的声音设置"</item>
+        <item>"保存当前声音设置"</item>
+        <item>"保存至三组设置之一，包含均衡器、音调、DSEE HX、DC 相位、黑胶和动态音量均衡。"</item>
+        <item>"载入声音设置"</item>
+        <item>"载入已保存的音效；保持当前音量、增益、直出、DSD 和 Walkman One 播放模式。"</item>
+        <item>"耳机输出"</item>
+        <item>"Walkman 音量"</item>
+        <item>"AVLS 音量限制"</item>
+        <item>"按原厂当前输出与增益限制音量；关闭时不会自动提高音量。"</item>
+        <item>"3.5 mm 高增益"</item>
+        <item>"切换时按原厂规则调整音量；低于目标初始音量时保持原值。"</item>
+        <item>"4.4 mm 高增益"</item>
+        <item>"4.4 mm 平衡输出尚未完成。"</item>
+        <item>"原生 DSD"</item>
+        <item>"尚未完成；目前可使用 3.5 mm 的 DSD 转 PCM。"</item>
+        <item>"左声道衰减"</item>
+        <item>"右声道衰减"</item>
+        <item>"播放模式"</item>
+        <item>"CFW 调音取向"</item>
+        <item>"未指定（保持当前链路）"</item>
+        <item>"实验性选项：完整调音效果仍在验证。停止播放后可切换。"</item>
+        <item>"CFW 音量模式（GMD）"</item>
+        <item>"Normal（标准）"</item>
+        <item>"Higher（较高）"</item>
+        <item>"Lower（较低）"</item>
+        <item>"DSD 播放设置"</item>
+        <item>"当前 DSD 处理"</item>
+        <item>"DSD 滤波器"</item>
+        <item>"缓降（Slow Roll-Off）"</item>
+        <item>"陡降（Sharp Roll-Off）"</item>
+        <item>"DSD 增益"</item>
+        <item>"均衡器与音调"</item>
+        <item>"调整方式"</item>
+        <item>"十段均衡器"</item>
+        <item>"三段音调"</item>
+        <item>"选择十段均衡器并关闭直出后生效。"</item>
+        <item>"频段 "</item>
+        <item>"音调控制"</item>
+        <item>"选择三段音调并关闭直出后生效。"</item>
+        <item>"低音"</item>
+        <item>"中音"</item>
+        <item>"高音"</item>
+        <item>"使用 Sony 原厂升频处理，直出开启时不适用。"</item>
+        <item>"DSEE 模式"</item>
+        <item>"标准"</item>
+        <item>"女声"</item>
+        <item>"男声"</item>
+        <item>"打击乐"</item>
+        <item>"弦乐"</item>
+        <item>"当前处理"</item>
+        <item>"DC 相位线性器"</item>
+        <item>"使用原厂相位处理。"</item>
+        <item>"相位模式"</item>
+        <item>"类型 A LOW"</item>
+        <item>"类型 A STANDARD"</item>
+        <item>"类型 A HIGH"</item>
+        <item>"类型 B LOW"</item>
+        <item>"类型 B STANDARD"</item>
+        <item>"类型 B HIGH"</item>
+        <item>"黑胶处理"</item>
+        <item>"使用原厂黑胶处理效果。"</item>
+        <item>"黑胶模式"</item>
+        <item>"音臂共振"</item>
+        <item>"转盘共振"</item>
+        <item>"音纹杂音"</item>
+        <item>"动态音量均衡"</item>
+        <item>"使用 Sony 原厂处理，减小曲目间的音量差异；直出开启时不生效。"</item>
+        <item>"当前支持范围"</item>
+        <item>"USB DAC 和蓝牙接收独占声音输出，开启前请连接耳机并调整音量。DSEE AI 适用于 44.1 / 48 kHz 立体声 PCM；其他格式遵循原厂处理规则。4.4 mm 与原生 DSD 尚未完成，更多 CFW 调音取向仍在适配。"</item>
+        <item>"蓝牙输出 · "</item>
+        <item>"请选择模式"</item>
+        <item>"原生 DSD · 4.4 mm"</item>
+        <item>"Sony 原厂 DSD 转 PCM"</item>
+        <item>"未读取模式"</item>
+        <item>" · 停止播放后可切换"</item>
+        <item>"未确认"</item>
+        <item>"当前生效："</item>
+        <item>"已保存："</item>
+        <item>"；当前生效："</item>
+        <item>"。更改后需重新启动，与耳机高增益开关分别设置。"</item>
+        <item>"当前输出："</item>
+        <item>"上次播放输出："</item>
+        <item>"高增益"</item>
+        <item>"普通增益"</item>
+        <item>"。可调整原厂音量；其他声音设置请先关闭接收。"</item>
+        <item>"。声音设置请在关闭接收后修改。"</item>
+        <item>"。DSF 使用原厂音量；未经过 Android 媒体混音与软件音量。"</item>
+        <item>"。播放器音量和 Android 媒体音量共同决定响度。"</item>
+        <item>"已开启 · 当前上限 "</item>
+        <item>"USB DAC（状态待确认）"</item>
+        <item>"蓝牙接收（状态待确认）"</item>
+        <item>" 声音设置请在关闭接收后修改。"</item>
+        <item>"连接后读取设备状态"</item>
+        <item>"按原厂方式发送相对音量指令"</item>
+        <item>"按设备回报音量调节，等待设备确认"</item>
+        <item>"已开启；当前连接按原厂相对音量方式调节"</item>
+        <item>"降低"</item>
+        <item>"提高"</item>
+        <item>"取消"</item>
+        <item>"设备状态未确认，点按重新读取"</item>
+        <item>"未选择 · 已配对设备 "</item>
+        <item>" 台"</item>
+        <item>" · 已选择"</item>
+        <item>"不指定设备"</item>
+        <item>"蓝牙设备"</item>
+        <item>"正在保存设备选择…"</item>
+        <item>"独占状态未确认，点按重新读取"</item>
+        <item>"未指定 · 普通播放"</item>
+        <item>" · 已独占"</item>
+        <item>"正在读取应用…"</item>
+        <item>"不指定（普通播放）"</item>
+        <item>"正在切换独占应用…"</item>
+        <item>"声音设置 1"</item>
+        <item>"声音设置 2"</item>
+        <item>"声音设置 3"</item>
+        <item>"正在保存声音设置…"</item>
+        <item>"正在载入声音设置…"</item>
+        <item>"预设请求失败（"</item>
+        <item>"保存请求已发送：声音设置 "</item>
+        <item>"载入请求已发送：声音设置 "</item>
+        <item>"预设操作未获确认"</item>
+        <item>"将重新读取播放器状态；尚未初始化的预设需要先保存。"</item>
+        <item>"确定"</item>
+        <item>"正在应用并保存…"</item>
+        <item>"设置请求失败（"</item>
+        <item>"设置请求已发送"</item>
+        <item>"已发送 AVLS 限制后的音量请求"</item>
+        <item>"未能应用设置"</item>
+        <item>"本次设置未获确认，将重新读取播放器状态。"</item>
+        <item>"未接受设置请求"</item>
+        <item>"设置请求已发送；当前输出状态可重新读取"</item>
+        <item>"设置未获确认"</item>
+        <item>"将重新读取播放器状态。本次请求不会自动重发。"</item>
+        <item>"蓝牙接收独占"</item>
+        <item>"输出已开启 · "</item>
+        <item>" · 输出静音"</item>
+        <item>"已就绪 · 等待手机音频"</item>
+        <item>" · 原厂音量可调整 · 音效只读"</item>
+        <item>" · 当前声音设置只读"</item>
+        <item>"USB DAC 独占"</item>
+        <item>"输出 · "</item>
+        <item>"输出静音"</item>
+        <item>"正在播放"</item>
+        <item>"已就绪 · 等待音频"</item>
+        <item>"原生 DSD 独占输出已就绪 · "</item>
+        <item>"原厂音量可调整"</item>
+        <item>"当前设置只读"</item>
+        <item>"DSF 独占输出已就绪 · "</item>
+        <item>"音效可调整 · 原厂音量可调整"</item>
+        <item>"已读取原厂声音设置 · "</item>
+        <item>"待机"</item>
+        <item>"声音设置正忙，稍后自动刷新。"</item>
+        <item>"尚未确认当前声音状态，正在重新读取。"</item>
+        <item>"蓝牙设备服务尚未就绪"</item>
+        <item>"设备列表未确认"</item>
+        <item>"蓝牙设备服务未响应"</item>
+        <item>"蓝牙设备回读格式"</item>
+        <item>"蓝牙输出服务尚未就绪"</item>
+        <item>"蓝牙输出服务未响应"</item>
+        <item>"蓝牙输出响应格式"</item>
+        <item>"Sony 蓝牙输出"</item>
+        <item>"关闭"</item>
+        <item>"蓝牙输出状态未确认，请重新读取"</item>
+        <item>"正在连接…"</item>
+        <item>"正在关闭…"</item>
+        <item>"手机"</item>
+        <item>"已开启，请从已配对手机连接并播放。"</item>
+        <item>"蓝牙音频链路已开启 · "</item>
+        <item>"DSEE 处理状态不完整"</item>
+        <item>"DSEE 状态标记无效"</item>
+        <item>"DSEE 采样率无效"</item>
+        <item>"DSEE AI 实际处理状态不一致"</item>
+        <item>"已关闭"</item>
+        <item>"DSEE AI 正在处理 · 输入 "</item>
+        <item>" · 等待输出"</item>
+        <item>" · 输出 "</item>
+        <item>"当前格式按 Sony 原厂 DSEE HX 规则处理"</item>
+        <item>"已选择 DSEE AI · 适用于 44.1 / 48 kHz 立体声 PCM"</item>
+        <item>"DSEE HX · 按 Sony 原厂适用条件处理"</item>
+        <item>"已选择 DSEE HX · 播放时按原厂适用条件处理"</item>
+        <item>" · 输入 "</item>
+        <item>"Sony DSD 播放"</item>
+        <item>"选择 DSF 文件"</item>
+        <item>"播放"</item>
+        <item>"停止"</item>
+        <item>"声音设置"</item>
+        <item>"刷新播放状态"</item>
+        <item>"3.5 mm 使用 DSD 转 PCM，滤波器和 DSD 增益可在声音设置中调整。4.4 mm 与原生 DSD 尚未完成。"</item>
+        <item>"正在读取播放状态…"</item>
+        <item>"原生 DSD · DSD"</item>
+        <item>"原厂 DSD 转 PCM · "</item>
+        <item>"尚未选择 DSF 文件"</item>
+        <item>"原厂音量 "</item>
+        <item>"原厂音量待确认"</item>
+        <item>"正在准备文件…"</item>
+        <item>"正在启动…"</item>
+        <item>"播放服务已退出"</item>
+        <item>"播放后端返回错误 "</item>
+        <item>"正在播放 · "</item>
+        <item>"正在停止…"</item>
+        <item>"正在启动原厂播放链…"</item>
+        <item>"未能播放（错误 "</item>
+        <item>"播放结束"</item>
+        <item>"已停止"</item>
+        <item>"文件已准备好"</item>
+        <item>"请选择 DSF 文件"</item>
+        <item>"播放状态未确认，请刷新状态后再试"</item>
+        <item>"播放链尚未释放"</item>
+        <item>"无法取得播放焦点"</item>
+        <item>"请先停止播放并确认状态"</item>
+        <item>"请选择可读取的 DSF 文件"</item>
+        <item>"正在准备 DSF 文件…"</item>
+        <item>"DSF 文件"</item>
+        <item>"请选择 .dsf 文件"</item>
+        <item>"无法清理未完成文件"</item>
+        <item>"存储空间不足"</item>
+        <item>"无法读取文件"</item>
+        <item>"已取消准备"</item>
+        <item>"文件超过可用空间"</item>
+        <item>"DSF 文件不完整"</item>
+        <item>"无法保存已准备文件"</item>
+        <item>"无法准备文件："</item>
+        <item>"未接受原厂音量请求"</item>
+        <item>"音量结果未确认；不会自动重发"</item>
+        <item>"接收独占服务尚未就绪"</item>
+        <item>"接收独占服务未响应"</item>
+        <item>"接收独占响应格式"</item>
+        <item>"蓝牙输出关闭仍未确认"</item>
+        <item>"接收独占保护尚未确认"</item>
+        <item>"接收尚未关闭"</item>
+        <item>"另一接收实例仍在占用"</item>
+        <item>"系统声音恢复尚未确认"</item>
+        <item>"接收状态响应不完整"</item>
+        <item>"接收状态响应不匹配"</item>
+        <item>"接收状态响应无效"</item>
+        <item>"关闭状态尚未确认"</item>
+        <item>"接收会话身份缺失"</item>
+        <item>"独占状态尚未确认"</item>
+        <item>"输入故障状态不完整"</item>
+        <item>"资源保留状态不完整"</item>
+        <item>"退出过程尚未完成"</item>
+        <item>"正在开启 USB DAC…"</item>
+        <item>"已开启，等待电脑播放。"</item>
+        <item>"已开启，正在接收音频…"</item>
+        <item>"电脑输入格式暂不支持；独占仍保留，请关闭后重新开启。"</item>
+        <item>"音频输入中断；独占仍保留，请关闭后重新开启。"</item>
+        <item>"正在关闭并恢复系统声音…"</item>
+        <item>"退出状态未确认，请重启播放器。"</item>
+        <item>"未开启，请先连接一副耳机。"</item>
+        <item>"未开启，请先停止其他播放。"</item>
+        <item>"未能开启，请检查耳机和电脑连接。"</item>
+        <item>"已关闭；开启前请连接一副耳机并调整音量。"</item>
+        <item>"电脑"</item>
+        <item>"正在关闭 USB DAC…"</item>
+        <item>"接收服务已退出"</item>
+        <item>"接收请求编号已用尽"</item>
+        <item>"接收状态含有不支持的描述符"</item>
+        <item>"接收独占保护缺失，关闭结果尚未确认"</item>
+        <item>"接收独占保护缺失，正在确认关闭"</item>
+        <item>"接收保护已重置，本次接收已关闭；请重新开启。"</item>
+        <item>"USB DAC 状态未确认，正在重新读取…"</item>
+        <item>"无法确认 USB DAC 状态，请重新打开此页读取。"</item>
+        <item>"状态尚未读取"</item>
+        <item>"正在读取独占状态"</item>
+        <item>"用户已切换，独占选择已清空"</item>
+        <item>"独占切换尚未确认"</item>
+        <item>"独占切换失败（"</item>
+        <item>"普通播放，未指定独占应用"</item>
+        <item>"独占已生效："</item>
+        <item>"选择已生效，但保存失败"</item>
+        <item>"应用安装身份已变，独占选择已清空"</item>
+        <item>" 独占保护中；"</item>
+        <item>"退出后恢复普通播放"</item>
+        <item>"保留应用选择："</item>
+        <item>"独占状态未确认（"</item>
+        <item>"），请重新读取"</item>
+        <item>"正在保留接收保护，请打开对应接收模式确认状态"</item>
+        <item>"独占已恢复："</item>
+        <item>"接收界面已退出，独占保护保留；请重新打开确认关闭"</item>
+        <item>"正在关闭蓝牙输出，等待接收独占"</item>
+        <item>"另一接收实例正在交接"</item>
+        <item>"蓝牙设备状态尚未读取"</item>
+        <item>"未选择蓝牙输出设备"</item>
+        <item>"蓝牙输出设备已选择"</item>
+        <item>"设备列表已变化，请重新打开列表"</item>
+        <item>"保存结果尚未确认，请重新读取"</item>
+        <item>"蓝牙设备状态未确认，请重新读取"</item>
+        <item>"正在读取蓝牙输出状态"</item>
+        <item>"蓝牙操作未获确认（"</item>
+        <item>"蓝牙回执未确认，正在关闭本次连接"</item>
+        <item>"请先选择蓝牙输出设备"</item>
+        <item>"未连接"</item>
+        <item>"已连接"</item>
+        <item>"蓝牙连接失败（"</item>
+        <item>"蓝牙连接未获确认，正在关闭"</item>
+        <item>"接收模式独占中，蓝牙输出已关闭"</item>
+        <item>"先选择蓝牙输出设备"</item>
+        <item>"正在连接 "</item>
+        <item>"Android 蓝牙尚未关闭"</item>
+        <item>"Android 蓝牙关闭未获确认"</item>
+        <item>"蓝牙连接超时，正在关闭"</item>
+        <item>"正在关闭蓝牙输出"</item>
+        <item>"Android 路由属于其他连接"</item>
+        <item>"Android 路由关闭尚未确认"</item>
+        <item>"蓝牙输出已关闭，可以进入接收模式"</item>
+        <item>"接收独占尚未释放"</item>
+        <item>"Android 蓝牙恢复未获接受"</item>
+        <item>"蓝牙输出已关闭，正在恢复 Android 蓝牙"</item>
+        <item>"正在恢复 Android 蓝牙"</item>
+        <item>"Android 蓝牙状态已变化"</item>
+        <item>"未连接（上次操作未获确认）"</item>
+        <item>"蓝牙输出状态未确认（"</item>
+        <item>"蓝牙音量暂不可调整"</item>
+        <item>"已发送蓝牙设备音量指令；实际音量以设备回报为准"</item>
+        <item>"蓝牙设备音量未获确认；本次不会重发"</item>
+        <item>"设备音量 "</item>
+        <item>"设备未回报当前音量"</item>
+        <item>"正在调整设备音量…"</item>
+        <item>"已发送，等待设备确认"</item>
+        <item>"调节未获确认（"</item>
+        <item>"正在传输音频"</item>
+        <item>"已连接，等待播放"</item>
+        <item>"已就绪；等待音量操作"</item>
+        <item>"音量操作过密；本次未发送"</item>
+        <item>"音量操作已过期；本次未发送"</item>
+        <item>"原厂音量暂不可调整"</item>
+        <item>"音量请求已发送："</item>
+        <item>"索尼音量未确认；本次不会重发"</item>
+        <item>"原厂控制未接受"</item>
+        <item>"原厂控制等待超时"</item>
+        <item>"蓝牙接收 状态未确认，请重新打开此页读取。"</item>
+        <item>"正在读取 蓝牙接收 状态…"</item>
+        <item>"蓝牙接收 和蓝牙接收独占声音输出，开启前请连接耳机并调整音量。DSEE AI 适用于 44.1 / 48 kHz 立体声 PCM；其他格式遵循原厂处理规则。4.4 mm 与原生 DSD 尚未完成，更多 CFW 调音取向仍在适配。"</item>
+        <item>"蓝牙接收 独占"</item>
+        <item>"正在开启 蓝牙接收…"</item>
+        <item>"已开启，等待手机播放。"</item>
+        <item>"手机输入格式暂不支持；独占仍保留，请关闭后重新开启。"</item>
+        <item>"未能开启，请检查耳机和手机连接。"</item>
+        <item>"正在关闭 蓝牙接收…"</item>
+        <item>"蓝牙接收 状态未确认，正在重新读取…"</item>
+        <item>"无法确认 蓝牙接收 状态，请重新打开此页读取。"</item>
+    </string-array>
+</resources>

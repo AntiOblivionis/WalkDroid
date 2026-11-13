@@ -1,0 +1,5 @@
+<resources>
+    <string name="sony_audio_title">"Sony 声音"</string>
+    <string name="sony_audio_summary">"直出、均衡器、音调、DC 相位与黑胶"</string>
+    <string name="sony_dsd_title">"Sony DSD 播放"</string>
+</resources>

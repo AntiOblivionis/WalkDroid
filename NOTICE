@@ -1,0 +1,107 @@
+WalkDroid notices and source provenance
+======================================
+
+WalkDroid is an independent experimental project. Sony, Walkman, Android,
+LineageOS, Arm and Mali are marks of their respective owners. Neither this
+project nor its contributors are endorsed by those owners.
+
+The root LICENSE covers original project contributions only. It does not
+replace the copyright notices, licences, exceptions or redistribution terms
+on upstream files. Keep the notices and licence texts in every corresponding
+source tree and in any distribution to which they apply.
+
+Android and LineageOS
+---------------------
+upstream/lineage16/ contains a source snapshot based on Android 9 / LineageOS
+16. upstream/lineage16-revisions.xml records the upstream revisions used as
+the starting point; it is provenance, not a build or compatibility gate.
+Android and LineageOS contain material under several licences, predominantly
+Apache-2.0 as well as GPL, LGPL, BSD, MIT, Unicode and other terms. The original
+copyright notices, NOTICE and licence files remain with the relevant sources.
+Android source and licence information: https://source.android.com/docs/setup/contribute/licenses
+
+upstream/aosp-oreo-system-core/sdcard/ includes Android Open Source Project
+source and its Apache-2.0 notice. Other copied or adapted source has its own
+notice in system/zx300a/android/{audiohal,exfat,graphics,launcher,storage}/.
+In particular, fuse-exfat and libfuse-lite have GPL/LGPL obligations; do not
+assume the project-wide MIT licence applies to them.
+
+Additional Android library sources
+----------------------------------
+The archives in upstream/ also include Apache-2.0 sources used to rebuild
+Android libraries: Material Components 1.0.0-alpha1 and its preceding support
+design sources (https://github.com/material-components/material-components-android),
+the earlier support-design widget implementation from Android support commit
+965e46b2ba086625c54aa70de1d853083081e7b0,
+the AndroidX versionedparcelable directory at Android support commit
+5d2a3088e1b089d2cc776415740540079d5e0529; Slice and compatible Core source
+directories from Android support commit 2445931b27bd32831336c1aff7dbd490af8b83d4;
+Android ConstraintLayout and its
+solver from the studio-3.1.2 sherpa tag
+(https://android.googlesource.com/platform/frameworks/opt/sherpa/), and
+Flexbox Layout 0.3.2 (https://github.com/google/flexbox-layout).
+Source notices and the Apache-2.0 licence are retained in the archives. The
+archives exclude Gradle wrapper JARs; builders supply the Gradle build tools.
+
+Sony-published open source
+--------------------------
+upstream/sony-open/ contains source published by Sony for this device family:
+the Linux 3.10.26 kernel, BusyBox 1.23.1, glibc 2.23 and ALSA lib 1.0.29.
+The kernel and BusyBox distributions include GPL-2.0 material; glibc and ALSA
+include LGPL material. Consult the files and licence texts in each archive for
+the exact terms and exceptions. Old compiled executables, objects, encoded
+firmware images and identified firmware byte arrays embedded in the supplied
+kernel and BusyBox source archives were removed. Available source, copyright
+and licence notices were retained. Other hardware configurations may need
+their own firmware inputs. WalkDroid kernel changes and build scripts are in
+system/zx300a/kernel/ and tools/.
+Sony source and notices: https://oss.sony.net/Products/Linux/Audio/NW-ZX300G.html
+
+GNU C Library used by the prebuilt release
+-----------------------------------------
+The release's static BusyBox is linked with Ubuntu GLIBC 2.43-2ubuntu2.
+The corresponding upstream source and Ubuntu packaging changes are provided
+in upstream/ubuntu-glibc/ under the GNU LGPL and the other notices in that
+source. The .dsc is upstream source-package metadata, not a build requirement.
+The release includes its BusyBox configuration; the project patch and build
+instructions are supplied with the sources. Its original GPL-2.0-only licence
+notice and full licence text are included as licenses/BusyBox-LICENSE.txt.
+Builders using a different C library must observe that library's own terms.
+Source: https://archive.ubuntu.com/ubuntu/pool/main/g/glibc/
+
+GCC runtime used by the prebuilt release
+---------------------------------------
+Some device components contain statically linked libgcc routines from Ubuntu
+GCC 15.2.0-16ubuntu1, supplied by the gcc-15-cross 15ubuntu1 package. The
+corresponding GCC upstream source and both Ubuntu packaging source packages are
+in upstream/ubuntu-gcc/. The affected libgcc files are under GPL-3.0-or-later
+with the GCC Runtime Library Exception 3.1; the release includes the licence
+and exception texts. The .dsc files are source-package metadata, not a
+requirement for compiling or running the system.
+Sources: https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/
+         https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15-cross/
+
+The display adapter uses Apache-2.0 interface headers from Android CTS rather
+than copying the GPL driver headers into the Apache gralloc component. Its
+source provenance and the compared ARM32 ABI are described in
+system/zx300a/android/graphics/NOTICE.md. The kernel retains its own GPL and
+other applicable notices.
+
+Logo and fonts
+--------------
+The Android robot is reproduced or modified from work created and shared by
+Google and used according to the Creative Commons Attribution 3.0 License:
+https://creativecommons.org/licenses/by/3.0/ . Android is a trademark of Google
+LLC. The WalkDroid artwork is independent of and not endorsed by Google.
+JetBrains Mono is supplied under the SIL Open Font License; its licence is in
+assets/walkdroid/fonts/.
+
+Files not distributed
+---------------------
+Sony firmware, audio/radio libraries, Arm's proprietary Mali userspace driver,
+pairing databases, device backups and private signing keys are not included.
+The builder supplies proprietary inputs locally and must observe their own
+licence terms. Arm's driver terms depend on the selected package. The current
+graphics adapter is designed to use the driver's original binary; the builder
+must not redistribute proprietary images without the applicable rights.
+See https://developer.arm.com/Downloads/-/Mali%20GPUs%20User-Space%20Binary%20Drivers
